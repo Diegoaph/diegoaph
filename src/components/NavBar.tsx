@@ -1,3 +1,4 @@
+import { themePalette } from "../config/theme.cofig";
 import {
     AppBar,
     Box,
@@ -7,8 +8,16 @@ import {
     Stack,
     Toolbar,
     Typography,
+    styled,
 } from "@mui/material";
 import React from "react";
+import { NavLink } from "react-router-dom";
+
+const HoverableSpan = styled("span")({
+    "&:hover": {
+        textShadow: "0 0 2em #0f928c",
+    },
+});
 
 export const NavBar: React.FC<{}> = () => {
     return (
@@ -22,15 +31,37 @@ export const NavBar: React.FC<{}> = () => {
                             justifyContent="space-between"
                             alignItems="center">
                             <Grid item>
-                                <Typography fontWeight="bold">
-                                    Dev.DiegoPacheco@Gmail.com
-                                </Typography>
+                                <NavLink
+                                    to="mailto:Dev.DiegoPacheco@gmail.com?subject=¡¡Hemos%20visto%20tu%20portfolio!!&body=%20Diego,%20Me%20gustar%C3%ADa%20hablar%20contigo"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: themePalette.MID,
+                                    }}>
+                                    <Typography fontWeight="bold">
+                                        <HoverableSpan>
+                                            Dev.DiegoPacheco@Gmail.com
+                                        </HoverableSpan>
+                                    </Typography>
+                                </NavLink>
                             </Grid>
                             <Grid item>
                                 <Stack
                                     spacing={2}
                                     direction="row">
-                                    <Button variant="outlined">Projects</Button>
+                                    <Button
+                                        variant="outlined"
+                                        sx={{
+                                            color: themePalette.LIGHT,
+                                            borderColor: themePalette.MID,
+                                            "&:hover": {
+                                                backgroundColor:
+                                                    themePalette.DARK,
+                                                borderColor: themePalette.MID,
+                                                boxShadow: themePalette.LIGHT,
+                                            },
+                                        }}>
+                                        Projects
+                                    </Button>
                                     <Button variant="contained">Contact</Button>
                                 </Stack>
                             </Grid>
