@@ -1,6 +1,6 @@
 import React from "react";
 import { themePalette } from "../config/theme.cofig";
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Box, Container, Grid, styled } from "@mui/material";
 import "./Landing.css";
 import Gallery from "./Gallery";
 
@@ -90,7 +90,7 @@ const Landing: React.FC<{}> = () => {
                                 color: themePalette.LIGHT,
                                 marginTop: "0rem",
                             }}>
-                            Tools and technologies
+                            My Full-Stack formation:
                         </Header2>
                     </Grid>
                 </Grid>
