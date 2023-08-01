@@ -15,7 +15,7 @@
 
 -   🤝 I’m available and **open to work**
 
--   👨‍💻 All of my projects are available at [*Working on it*](_Working on it_)
+-   👨‍💻 All of my projects are available at [*Working on it*]
 
 -   💬 Ask me about **React.js, Redux.js, Express.js, PostgreSQL**
 

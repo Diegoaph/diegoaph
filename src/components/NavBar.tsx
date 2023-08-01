@@ -7,19 +7,21 @@ import {
     Grid,
     Stack,
     Toolbar,
-    Typography,
     styled,
 } from "@mui/material";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
-const HoverableSpan = styled("span")({
+const HoverableH2 = styled("h2")({
     "&:hover": {
         textShadow: "0 0 2em #0f928c",
     },
 });
 
 export const NavBar: React.FC<{}> = () => {
+    const location = useLocation();
+    const isProjectsPage = location.pathname === "/projects";
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed">
@@ -37,32 +39,50 @@ export const NavBar: React.FC<{}> = () => {
                                         textDecoration: "none",
                                         color: themePalette.MID,
                                     }}>
-                                    <Typography fontWeight="bold">
-                                        <HoverableSpan>
-                                            Dev.DiegoPacheco@Gmail.com
-                                        </HoverableSpan>
-                                    </Typography>
+                                    <HoverableH2>
+                                        Dev.DiegoPacheco@Gmail.com
+                                    </HoverableH2>
                                 </NavLink>
                             </Grid>
                             <Grid item>
                                 <Stack
                                     spacing={2}
                                     direction="row">
-                                    <Button
-                                        variant="outlined"
-                                        sx={{
-                                            color: themePalette.LIGHT,
-                                            borderColor: themePalette.MID,
-                                            "&:hover": {
-                                                backgroundColor:
-                                                    themePalette.DARK,
-                                                borderColor: themePalette.MID,
-                                                boxShadow: themePalette.LIGHT,
-                                            },
+                                    <NavLink
+                                        to={isProjectsPage ? "/" : "/projects"}
+                                        style={{
+                                            textDecoration: "none",
+                                            color: themePalette.MID,
                                         }}>
-                                        Projects
-                                    </Button>
-                                    <Button variant="contained">Contact</Button>
+                                        <Button
+                                            variant="outlined"
+                                            sx={{
+                                                color: themePalette.LIGHT,
+                                                borderColor: themePalette.MID,
+                                                "&:hover": {
+                                                    backgroundColor:
+                                                        themePalette.DARK,
+                                                    borderColor:
+                                                        themePalette.MID,
+                                                    boxShadow:
+                                                        themePalette.LIGHT,
+                                                },
+                                            }}>
+                                            {isProjectsPage
+                                                ? "Home"
+                                                : "Projects"}
+                                        </Button>
+                                    </NavLink>
+                                    <NavLink
+                                        to="mailto:Dev.DiegoPacheco@gmail.com?subject=¡¡Hemos%20visto%20tu%20portfolio!!&body=%20Diego,%20Me%20gustar%C3%ADa%20hablar%20contigo"
+                                        style={{
+                                            textDecoration: "none",
+                                            color: themePalette.MID,
+                                        }}>
+                                        <Button variant="contained">
+                                            Contact
+                                        </Button>
+                                    </NavLink>
                                 </Stack>
                             </Grid>
                         </Grid>

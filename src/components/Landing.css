@@ -1,0 +1,22 @@
+.h1:hover {
+    filter: drop-shadow(0 0 2em #006465);
+    cursor: pointer;
+}
+.tech-container {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    width: 60vw;
+}
+.word {
+    font-weight: bolder;
+    text-shadow: 0 0.2em 0.2em black;
+}
+.social {
+    margin: 0 1rem 0 1rem;
+}
+.socialimg {
+    border-radius: 30%;
+}
