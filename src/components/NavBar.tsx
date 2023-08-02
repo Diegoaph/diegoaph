@@ -21,6 +21,10 @@ const HoverableH2 = styled("h2")({
 export const NavBar: React.FC<{}> = () => {
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => {
+        setOpen(!open);
+    };
 
     return (
         <Box sx={{ flexGrow: 1 }}>

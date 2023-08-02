@@ -1,6 +1,6 @@
 import React from "react";
 import { themePalette } from "../config/theme.cofig";
-import { Box, Container, Grid, styled } from "@mui/material";
+import { Box, Container, Grid, styled, Button, Divider } from "@mui/material";
 import "./Landing.css";
 import Gallery from "./Gallery";
 
@@ -24,79 +24,209 @@ enum pics {
     GIT = "git.jpg",
     GH = "github.jpg",
 }
+enum certs {
+    FULLSTACK = "https://media.licdn.com/dms/image/D4E22AQH2JciUNRY6ZA/feedshare-shrink_2048_1536/0/1689991632684?e=1692835200&v=beta&t=HnFAY1MgshGUmZQkraAm_AirDBJ9GrHzBq8xzgIDLWI",
+    FRONTEND = "https://media.licdn.com/dms/image/D4E22AQE_Uew3OUc1yw/feedshare-shrink_2048_1536/0/1690167083293?e=1692835200&v=beta&t=MceJwN6bHuYz82khdK50mv1qevhJtsNzGEbDBe7D1b4",
+    ENGLISH = "https://media.licdn.com/dms/image/D4E22AQHuodEmQK89HQ/feedshare-shrink_1280/0/1690173496222?e=1692835200&v=beta&t=s0-teSZyIrmaPSOC9PRUbxnqXtJgIo3qmLlaueI3gLs",
+    TERMINAL = "https://media.licdn.com/dms/image/D4E22AQEpwEtWqZOPuA/feedshare-shrink_2048_1536/0/1690167888626?e=1692835200&v=beta&t=Qvql5GIce2OFoGlB513sUYTbnS_mDhKZloW2Vk1Q5tA",
+    GITHUB = "https://media.licdn.com/dms/image/D4E22AQEzRwS3BvWbQw/feedshare-shrink_2048_1536/0/1690168561993?e=1692835200&v=beta&t=y28NMEh5sbOaV0bJOprk2XbrmmRLTBhmSHGmK0qN2mI",
+    ALGOS = "https://media.licdn.com/dms/image/D4E22AQFHpFdcUSdWQw/feedshare-shrink_2048_1536/0/1690167596625?e=1692835200&v=beta&t=d84W55OO58IaYYy5lkBb8m98yyrziRmlFP0-Kn_Qyek",
+    BASICS = "https://media.licdn.com/dms/image/D4E22AQEbCpJwrk6Srw/feedshare-shrink_2048_1536/0/1690167317933?e=1692835200&v=beta&t=6F7loPgyspPinazOFuA8jV7ynZK-ge4eVWDHUr8WmA4",
+    LINUX = "https://media.licdn.com/dms/image/D4E22AQH7JaJOaHpoqQ/feedshare-shrink_2048_1536/0/1690168872290?e=1692835200&v=beta&t=ilVz9VzhKmT8lWIbWTigKT7bWZfDdK1kZqUDVJomCfU",
+}
 const Landing: React.FC<{}> = () => {
+    const handleScrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <Header1
-                className="h1"
-                style={{
-                    color: themePalette.LIGHT,
-                    marginTop: "4.5rem",
-                }}>
-                Check out my latest projects! ↗
-            </Header1>{" "}
+        <Box sx={{ flexGrow: 1, minHeight: "100vh" }}>
             <Container maxWidth="xl">
-                <Grid
-                    container
-                    direction="column"
-                    spacing={5}
-                    justifyContent="space-between">
-                    <Grid item>
-                        <Gallery />
+                <Grid container>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={2}
+                        style={{
+                            position: "sticky",
+                            top: 0,
+                        }}>
+                        <aside className="aside">
+                            <Button
+                                variant="outlined"
+                                onClick={() =>
+                                    handleScrollToSection("tools-technologies")
+                                }>
+                                Tools and technologies
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                onClick={() =>
+                                    handleScrollToSection("education")
+                                }>
+                                Education
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                onClick={() => handleScrollToSection("about")}>
+                                About Me
+                            </Button>
+                        </aside>
                     </Grid>
-                    <Grid item>
-                        <Header2
-                            className="h1"
-                            style={{
-                                color: themePalette.LIGHT,
-                                marginTop: "0rem",
-                            }}>
-                            Tools and technologies
-                        </Header2>
-                        <Header2
-                            className="h1"
-                            style={{
-                                color: themePalette.LIGHT,
-                                marginTop: "0rem",
-                            }}>
-                            that i've used on my projects:
-                        </Header2>
-                        <span className="tech-container">
-                            {Object.values(pics).map((tech, index) => (
-                                <div>
-                                    <img
-                                        key={index}
-                                        src={tech}
-                                        alt={tech}
-                                        height="80"
-                                        width="80"
-                                        style={{
-                                            borderRadius: "5px",
-                                            margin: "3px",
-                                        }}
-                                    />
-                                    <p className="word">{`${tech.slice(
-                                        0,
-                                        -4
-                                    )}`}</p>
-                                </div>
-                            ))}
-                        </span>
-                    </Grid>
-                    <Grid item>
-                        <Header2
-                            className="h1"
-                            style={{
-                                color: themePalette.LIGHT,
-                                marginTop: "0rem",
-                            }}>
-                            My Full-Stack formation:
-                        </Header2>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={10}>
+                        <Grid
+                            container
+                            direction="column"
+                            spacing={5}
+                            justifyContent="space-between">
+                            <Grid item>
+                                <Header1
+                                    className="h1"
+                                    style={{
+                                        color: themePalette.LIGHT,
+                                        marginTop: "4.5rem",
+                                    }}>
+                                    Check out my latest projects!↗
+                                </Header1>
+                                <Gallery />
+                            </Grid>
+                            <Divider
+                                id="tools-technologies"
+                                style={{
+                                    marginBottom: "3rem",
+                                    marginTop: "2rem",
+                                }}
+                            />
+                            <Grid item>
+                                <Header2
+                                    className="h1"
+                                    style={{
+                                        color: themePalette.LIGHT,
+                                        marginTop: "0rem",
+                                    }}>
+                                    Tools and technologies
+                                </Header2>
+                                <Header2
+                                    className="h1"
+                                    style={{
+                                        color: themePalette.LIGHT,
+                                        marginTop: "0rem",
+                                    }}>
+                                    that i've used on my projects:
+                                </Header2>
+                                <span className="tech-container">
+                                    {Object.values(pics).map((tech, index) => (
+                                        <div>
+                                            <img
+                                                key={index}
+                                                src={tech}
+                                                alt={tech}
+                                                height="80"
+                                                width="80"
+                                                style={{
+                                                    borderRadius: "5px",
+                                                    margin: "3px",
+                                                }}
+                                            />
+                                            <p className="word">{`${tech.slice(
+                                                0,
+                                                -4
+                                            )}`}</p>
+                                        </div>
+                                    ))}
+                                </span>
+                            </Grid>{" "}
+                            <Divider
+                                id="education"
+                                style={{
+                                    marginBottom: "3rem",
+                                    marginTop: "2rem",
+                                }}
+                            />
+                            <Grid item>
+                                <Header2
+                                    className="h1"
+                                    style={{
+                                        color: themePalette.LIGHT,
+                                        marginTop: "0rem",
+                                    }}>
+                                    My Full-Stack formation:
+                                </Header2>{" "}
+                                <span className="certs-container">
+                                    {Object.values(certs).map((cert, index) => (
+                                        <div>
+                                            <img
+                                                key={index}
+                                                src={cert}
+                                                alt={cert}
+                                                height="240"
+                                                width="300"
+                                                style={{
+                                                    borderRadius: "5px",
+                                                    margin: "3px",
+                                                }}
+                                            />
+                                        </div>
+                                    ))}
+                                </span>
+                            </Grid>{" "}
+                            <Divider
+                                id="about"
+                                style={{
+                                    marginBottom: "3rem",
+                                    marginTop: "2rem",
+                                }}
+                            />
+                            <Grid item>
+                                <Header2
+                                    className="h1"
+                                    style={{
+                                        color: themePalette.LIGHT,
+                                        marginTop: "0rem",
+                                    }}>
+                                    I'm Diego!
+                                </Header2>{" "}
+                                <section className="about-container">
+                                    <div className="foto-container">
+                                        qwertyu iop tre h jk d fgh jkl k jhgf s
+                                        dfghj kl kjh gfdssd u ytr e
+                                    </div>
+                                    <div className="foto-container">
+                                        {" "}
+                                        <img
+                                            src="https://avatars.githubusercontent.com/u/103613935?v=4"
+                                            alt="Diego Pacheco"
+                                            height="300"
+                                            width="300"
+                                            style={{
+                                                borderRadius: "15px",
+                                                margin: "3px",
+                                            }}
+                                        />
+                                        <hr />
+                                        <img
+                                            src="https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact"
+                                            alt="diegoaph"
+                                            style={{
+                                                borderRadius: "15px",
+                                                margin: "3px",
+                                            }}
+                                        />
+                                    </div>
+                                </section>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Container>
-            <section>
-                <h4 align="center">🔗Connect with me👇</h4>
+            <footer className="footer">
+                <h4 align="center">Connect with me</h4>
                 <p align="center">
                     <a
                         className="social"
@@ -133,7 +263,7 @@ const Landing: React.FC<{}> = () => {
                             src="https://1000marcas.net/wp-content/uploads/2019/11/logotipo-Whatsapp.jpg"
                             alt="Whatsapp (+57)302-3449160"
                             height="40"
-                            width="50"
+                            width="60"
                             className="socialimg"
                         />
                     </a>
@@ -164,7 +294,7 @@ const Landing: React.FC<{}> = () => {
                         />
                     </a>
                 </p>
-            </section>
+            </footer>
         </Box>
     );
 };
