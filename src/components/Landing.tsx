@@ -331,7 +331,7 @@ const Landing: React.FC<{}> = () => {
                     </a>
                     <a
                         className="social"
-                        href="wa.me/+573023449160"
+                        href="https://wa.me/+573023449160"
                         target="blank">
                         <img
                             align="center"
@@ -344,7 +344,7 @@ const Landing: React.FC<{}> = () => {
                     </a>
                     <a
                         className="social"
-                        href="https://linkedin.com/in/linkedin.com/in/diegoaph"
+                        href="https://linkedin.com/in/diegoaph"
                         target="blank">
                         <img
                             align="center"
@@ -357,7 +357,7 @@ const Landing: React.FC<{}> = () => {
                     </a>
                     <a
                         className="social"
-                        href="t.me/pachecohdiego"
+                        href="https://t.me/pachecohdiego"
                         target="blank">
                         <img
                             align="center"

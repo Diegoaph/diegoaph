@@ -41,6 +41,10 @@
 .social {
     margin: 0 1rem 0 1rem;
 }
+.social:hover {
+    filter: drop-shadow(0 0 2em #13b3ab);
+}
+
 .socialimg {
     border-radius: 30%;
 }
