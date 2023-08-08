@@ -18,8 +18,9 @@ const Item = ({ item }) => {
     const textOverlayStyle = {
         position: "absolute",
         bottom: 0,
+        backgroundRepeat: "no-reapeat",
         background:
-            "linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.03),rgba(0, 0, 0, 0.5), rgba(00, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.03),rgba(0, 0, 0, 0)",
+            "linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0)",
         color: "#fff",
         padding: "10px",
         textAlign: "center",

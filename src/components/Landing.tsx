@@ -1,8 +1,17 @@
 import React from "react";
 import { themePalette } from "../config/theme.cofig";
-import { Box, Container, Grid, styled, Button, Divider } from "@mui/material";
+import {
+    Box,
+    Container,
+    Grid,
+    styled,
+    Button,
+    Divider,
+    Typography,
+} from "@mui/material";
 import "./Landing.css";
 import Gallery from "./Gallery";
+import { NavLink } from "react-router-dom";
 
 const Header1 = styled("h1")({ fontSize: "3rem", marginBottom: "0.1em" });
 const Header2 = styled("h2")({ fontSize: "2rem" });
@@ -44,55 +53,61 @@ const Landing: React.FC<{}> = () => {
 
     return (
         <Box sx={{ flexGrow: 1, minHeight: "100vh" }}>
+            <Grid container>
+                <header className="aside">
+                    <Button
+                        variant="outlined"
+                        onClick={() => handleScrollToSection("top")}>
+                        Gallery
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        onClick={() =>
+                            handleScrollToSection("tools-technologies")
+                        }>
+                        Tools and technologies
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        onClick={() => handleScrollToSection("education")}>
+                        Education
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        onClick={() => handleScrollToSection("about")}>
+                        About Me
+                    </Button>
+                </header>
+            </Grid>{" "}
             <Container maxWidth="xl">
                 <Grid container>
-                    <Grid
-                        item
-                        xs={12}
-                        sm={2}
-                        style={{
-                            position: "sticky",
-                            top: 0,
-                        }}>
-                        <aside className="aside">
-                            <Button
-                                variant="outlined"
-                                onClick={() =>
-                                    handleScrollToSection("tools-technologies")
-                                }>
-                                Tools and technologies
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                onClick={() =>
-                                    handleScrollToSection("education")
-                                }>
-                                Education
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                onClick={() => handleScrollToSection("about")}>
-                                About Me
-                            </Button>
-                        </aside>
-                    </Grid>
-                    <Grid
-                        item
-                        xs={12}
-                        sm={10}>
+                    <Grid item>
                         <Grid
                             container
                             direction="column"
                             spacing={5}
                             justifyContent="space-between">
+                            <Divider
+                                id="top"
+                                style={{
+                                    margin: "0rem",
+                                }}
+                            />
                             <Grid item>
                                 <Header1
                                     className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "4.5rem",
+                                        marginTop: "6rem",
                                     }}>
-                                    Check out my latest projects!↗
+                                    <NavLink
+                                        to="/projects"
+                                        style={{
+                                            color: themePalette.LIGHT,
+                                            textDecorationColor: "none",
+                                        }}>
+                                        Check out my latest projects!
+                                    </NavLink>
                                 </Header1>
                                 <Gallery />
                             </Grid>
@@ -108,15 +123,15 @@ const Landing: React.FC<{}> = () => {
                                     className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "0rem",
+                                        marginTop: "2rem",
                                     }}>
-                                    Tools and technologies
+                                    Tools and technologies:
                                 </Header2>
                                 <Header2
                                     className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "0rem",
+                                        marginTop: "2.5rem",
                                     }}>
                                     that i've used on my projects:
                                 </Header2>
@@ -154,9 +169,9 @@ const Landing: React.FC<{}> = () => {
                                     className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "0rem",
+                                        marginTop: "3rem",
                                     }}>
-                                    My Full-Stack formation:
+                                    My Full-Stack formation
                                 </Header2>{" "}
                                 <span className="certs-container">
                                     {Object.values(certs).map((cert, index) => (
@@ -183,43 +198,103 @@ const Landing: React.FC<{}> = () => {
                                     marginTop: "2rem",
                                 }}
                             />
-                            <Grid item>
-                                <Header2
-                                    className="h1"
+                            <Grid
+                                container
+                                direction="column">
+                                <Typography
+                                    variant="h4"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "0rem",
+                                        marginTop: "5rem",
                                     }}>
                                     I'm Diego!
-                                </Header2>{" "}
-                                <section className="about-container">
-                                    <div className="foto-container">
-                                        qwertyu iop tre h jk d fgh jkl k jhgf s
-                                        dfghj kl kjh gfdssd u ytr e
-                                    </div>
-                                    <div className="foto-container">
-                                        {" "}
-                                        <img
-                                            src="https://avatars.githubusercontent.com/u/103613935?v=4"
-                                            alt="Diego Pacheco"
-                                            height="300"
-                                            width="300"
-                                            style={{
-                                                borderRadius: "15px",
-                                                margin: "3px",
-                                            }}
-                                        />
-                                        <hr />
-                                        <img
-                                            src="https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact"
-                                            alt="diegoaph"
-                                            style={{
-                                                borderRadius: "15px",
-                                                margin: "3px",
-                                            }}
-                                        />
-                                    </div>
-                                </section>
+                                </Typography>
+                                <Grid
+                                    container
+                                    direction="row"
+                                    className="about-container">
+                                    <Grid
+                                        item
+                                        xs={12}
+                                        lg={6}
+                                        className="description-container">
+                                        <Typography>
+                                            <strong>
+                                                Creating User-Centric Solutions
+                                            </strong>{" "}
+                                            <br />I leverage my experience as a
+                                            Full-Stack Web Developer to deliver
+                                            efficient and scalable web
+                                            solutions. <br /> <br />
+                                            My journey has deepened my
+                                            understanding of seamlessly
+                                            integrating form and function in web
+                                            development.I quickly adapt to
+                                            emerging technological trends,
+                                            ensuring I stay at the forefront.
+                                            <br />
+                                            <br /> Continuously honing my skills
+                                            guarantees that my projects are not
+                                            only innovative but also aligned
+                                            with industry shifts.
+                                            <br />
+                                            <br /> User-centered design defines
+                                            my approach. Detail-oriented, I
+                                            create immersive web experiences by
+                                            meticulously considering every pixel
+                                            and line of code. Prioritizing
+                                            aesthetic appeal and seamless
+                                            functionality, I ensure successful
+                                            outcomes in projects. Client
+                                            satisfaction drives me.
+                                            <br />
+                                            <br />
+                                            Effective communication, punctual
+                                            deliveries, and exceeding
+                                            expectations support my
+                                            collaborations. Carefully curating
+                                            web solutions, I accurately
+                                            translate clients' visions into
+                                            reality. As a Full-Stack Web
+                                            Developer, I bring a proven track
+                                            record of creating user-focused
+                                            dynamic websites.
+                                        </Typography>
+                                    </Grid>
+                                    <Grid
+                                        item
+                                        xs={12}
+                                        lg={6}
+                                        className="foto-container">
+                                        <Grid
+                                            container
+                                            direction="column">
+                                            <Grid item>
+                                                <img
+                                                    src="https://avatars.githubusercontent.com/u/103613935?v=4"
+                                                    alt="Diego Pacheco"
+                                                    height="300"
+                                                    width="300"
+                                                    style={{
+                                                        borderRadius: "15px",
+                                                        margin: "3px",
+                                                    }}
+                                                />
+                                            </Grid>
+                                            <Grid item>
+                                                <hr />
+                                                <img
+                                                    src="https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact"
+                                                    alt="diegoaph"
+                                                    style={{
+                                                        borderRadius: "15px",
+                                                        margin: "3px",
+                                                    }}
+                                                />
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
