@@ -118,7 +118,9 @@ const Landing: React.FC<{}> = () => {
                                     marginTop: "2rem",
                                 }}
                             />
-                            <Grid item>
+                            <Grid item  style={{
+                                        alignItems: "center",
+                                    }}>>
                                 <Header2
                                     className="h1"
                                     style={{
