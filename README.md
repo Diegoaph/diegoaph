@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Diego!</h1>
 <h3 align="center">Fullstack web developer</h3>
-
+<a href="https://devdiego.vercel.app/" target="blank"><img align="center" src="https://devdiego.vercel.app/logodiego.png" alt="linkedin.com/in/diegoaph" height="80" width="80" /></a>
 <section><h4 align="center">🔗Connect With me👇</h4>
 <p align="center">
   <a href="mailto:Dev.DiegoPacheco@gmail.com?subject=Hola%20Diego&body=Me%20gustar%C3%ADa%20hablar%20contigo" target="blank"><img align="center" src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="Dev.DiegoPacheco@gmail.com" height="40" width="40" /></a>
