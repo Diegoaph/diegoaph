@@ -1,4 +1,4 @@
-<div><a href="https://devdiego.vercel.app/" target="blank"><img align="center" src="https://devdiego.vercel.app/logodiego.png" alt="linkedin.com/in/diegoaph" height="80" width="80" /></a><h1 align="center">Hi 👋, I'm Diego!</h1></div>
+<p align="center"><a href="https://devdiego.vercel.app/" target="blank"><img align="center" src="https://devdiego.vercel.app/logodiego.png" alt="linkedin.com/in/diegoaph" height="80" width="80" /></a><h1 align="center">Hi 👋, I'm Diego!</h1></p>
 
 <h3 align="center">Fullstack web developer</h3>
 
