@@ -16,22 +16,22 @@ import { NavLink } from "react-router-dom";
 const Header1 = styled("h1")({ fontSize: "3rem", marginBottom: "0.1em" });
 const Header2 = styled("h2")({ fontSize: "2rem" });
 enum pics {
-    API = "api.jpg",
-    CSS = "css.jpg",
     JS = "javascript.jpg",
     TS = "typescript.jpg",
     VITE = "vite.svg",
-    MUI = "material-ui.jpg",
     REACT = "react.jpg",
     RX = "redux.jpg",
     RTK = "reduxTK.jpg",
-    FB = "firebase.jpg",
-    NODE = "node.jpg",
-    EX = "express.jpg",
-    PG = "postgresql.jpg",
-    MDB = "mongodb.jpg",
+    CSS = "css.jpg",
+    MUI = "material-ui.jpg",
     GIT = "git.jpg",
     GH = "github.jpg",
+    NODE = "node.jpg",
+    EX = "express.jpg",
+    FB = "firebase.jpg",
+    PG = "postgresql.jpg",
+    MDB = "mongodb.jpg",
+    API = "api.jpg",
 }
 enum certs {
     FULLSTACK = "https://media.licdn.com/dms/image/D4E22AQH2JciUNRY6ZA/feedshare-shrink_2048_1536/0/1689991632684?e=1692835200&v=beta&t=HnFAY1MgshGUmZQkraAm_AirDBJ9GrHzBq8xzgIDLWI",
@@ -118,9 +118,11 @@ const Landing: React.FC<{}> = () => {
                                     marginTop: "2rem",
                                 }}
                             />
-                            <Grid item  style={{
-                                        alignItems: "center",
-                                    }}>
+                            <Grid
+                                item
+                                style={{
+                                    alignItems: "center",
+                                }}>
                                 <Header2
                                     className="h1"
                                     style={{

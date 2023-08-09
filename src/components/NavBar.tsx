@@ -15,6 +15,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 const HoverableH2 = styled("h2")({
+    margin: "2px",
+    marginTop: "5px",
     "&:hover": {
         textShadow: "0 0 2em #0f928c",
     },
@@ -119,6 +121,15 @@ export const NavBar: React.FC<{}> = () => {
                                         color: themePalette.MID,
                                     }}>
                                     <HoverableH2>
+                                        <img
+                                            src="logodiego.png"
+                                            alt="DevDiego"
+                                            height="60"
+                                            width="60"
+                                            style={{
+                                                marginRight: "1rem",
+                                            }}
+                                        />
                                         Dev.DiegoPacheco@Gmail.com
                                     </HoverableH2>
                                 </NavLink>
