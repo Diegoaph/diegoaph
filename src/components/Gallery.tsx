@@ -1,6 +1,7 @@
 import Carousel from "react-material-ui-carousel";
 import { themePalette } from "../config/theme.cofig";
-import React from "react";
+import React, { CSSProperties } from "react";
+
 interface ItemProps {
     item: {
         URL: string;
@@ -11,7 +12,7 @@ interface ItemProps {
 }
 
 const Item: React.FC<ItemProps> = ({ item }) => {
-    const itemContainerStyle = {
+    const itemContainerStyle: CSSProperties = {
         position: "relative",
         textAlign: "center",
         width: "100%",
@@ -20,17 +21,18 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         boxShadow: "8px 8px 8px 8px rgba(0, 0, 0, 0.25)",
     };
 
-    const imageStyle = {
+    const imageStyle: CSSProperties = {
         maxHeight: "100%",
         borderRadius: "0.5em",
     };
 
-    const textOverlayStyle = {
+    const textOverlayStyle: CSSProperties = {
         position: "absolute",
         bottom: 0,
-        backgroundRepeat: "no-reapeat",
+        backgroundRepeat: "no-repeat",
         background:
             "linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0)",
+
         color: "#fff",
         padding: "10px",
         textAlign: "center",
@@ -51,7 +53,6 @@ const Item: React.FC<ItemProps> = ({ item }) => {
                     {item.TECHNOLOGIES.map((tech: string, index: number) => (
                         <img
                             key={index}
-                            align="center"
                             src={tech}
                             alt={tech}
                             height="30"
