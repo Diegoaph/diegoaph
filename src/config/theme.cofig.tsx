@@ -13,7 +13,19 @@ export enum themePalette {
     LIME = "#beee3b",
     FONT_GLOBAL = "ubuntu",
 }
+type CustomPalette = {
+    background: {
+        default: string;
+    };
+    primary: {
+        main: string;
+    };
+};
 
+declare module "@mui/material/styles" {
+    interface Palette extends CustomPalette {}
+    interface PaletteOptions extends CustomPalette {}
+}
 const theme = createTheme({
     palette: {
         mode: "dark",

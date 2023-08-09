@@ -1,6 +1,16 @@
 import Carousel from "react-material-ui-carousel";
 import { themePalette } from "../config/theme.cofig";
-const Item = ({ item }) => {
+import React from "react";
+interface ItemProps {
+    item: {
+        URL: string;
+        PROJECT: string;
+        DETAIL: string;
+        TECHNOLOGIES: string[];
+    };
+}
+
+const Item: React.FC<ItemProps> = ({ item }) => {
     const itemContainerStyle = {
         position: "relative",
         textAlign: "center",
@@ -32,13 +42,13 @@ const Item = ({ item }) => {
             <img
                 src={item.URL}
                 alt={item.PROJECT}
-                style={imageStyle}
+                style={imageStyle as React.ImgHTMLAttributes<HTMLImageElement>}
             />
             <div style={textOverlayStyle}>
                 <h3>{item.PROJECT}</h3>
                 <p>{item.DETAIL}</p>
                 <span>
-                    {item.TECHNOLOGIES.map((tech, index) => (
+                    {item.TECHNOLOGIES.map((tech: string, index: number) => (
                         <img
                             key={index}
                             align="center"

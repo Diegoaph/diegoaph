@@ -35,14 +35,13 @@ export const NavBar: React.FC<{}> = () => {
 
     const modalContent = (
         <div>
-            <h4 align="center">Connect with me</h4>
-            <p align="center">
+            <h4>Connect with me</h4>
+            <p>
                 <a
                     className="social"
                     href="https://github.com/Diegoaph"
                     target="blank">
                     <img
-                        align="center"
                         src="https://cdn-icons-png.flaticon.com/512/38/38401.png?w=360"
                         alt="github.com/diegoaph"
                         height="40"
@@ -55,7 +54,6 @@ export const NavBar: React.FC<{}> = () => {
                     href="mailto:Dev.DiegoPacheco@gmail.com?subject=¡Hemos%20visto%20tu%20portfolio!&body=Hola%20Diego!,%20me%20gustar%C3%ADa%20hablar%20contigo"
                     target="blank">
                     <img
-                        align="center"
                         src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
                         alt="Dev.DiegoPacheco@gmail.com"
                         height="40"
@@ -68,7 +66,6 @@ export const NavBar: React.FC<{}> = () => {
                     href="https://wa.me/+573023449160"
                     target="blank">
                     <img
-                        align="center"
                         src="https://1000marcas.net/wp-content/uploads/2019/11/logotipo-Whatsapp.jpg"
                         alt="Whatsapp (+57)302-3449160"
                         height="40"
@@ -81,7 +78,6 @@ export const NavBar: React.FC<{}> = () => {
                     href="https://linkedin.com/in/diegoaph"
                     target="blank">
                     <img
-                        align="center"
                         src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
                         alt="linkedin.com/in/diegoaph"
                         height="30"
@@ -94,7 +90,6 @@ export const NavBar: React.FC<{}> = () => {
                     href="https://t.me/pachecohdiego"
                     target="blank">
                     <img
-                        align="center"
                         src="https://store-images.s-microsoft.com/image/apps.12376.13537716651231321.3067a421-6c2f-48a9-b77c-1e38e19146e6.f539b24d-6328-4c00-9469-2d6d841667e6"
                         alt="Telegram @PachecoHDiego"
                         height="40"
