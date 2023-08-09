@@ -120,7 +120,7 @@ const Landing: React.FC<{}> = () => {
                             />
                             <Grid item  style={{
                                         alignItems: "center",
-                                    }}>>
+                                    }}>
                                 <Header2
                                     className="h1"
                                     style={{
