@@ -30,7 +30,6 @@ const StyledStack = styled("div")`
 
     @media (max-width: 400px) {
         font-size: 2rem;
-        margin-left: 0;
     }
 `;
 
