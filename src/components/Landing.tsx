@@ -21,17 +21,17 @@ enum pics {
     VITE = "vite.svg",
     REACT = "react.jpg",
     RX = "redux.jpg",
-    RTK = "reduxTK.jpg",
     CSS = "css.jpg",
     MUI = "material-ui.jpg",
-    GIT = "git.jpg",
-    GH = "github.jpg",
+    RTK = "reduxTK.jpg",
     NODE = "node.jpg",
     EX = "express.jpg",
     FB = "firebase.jpg",
     PG = "postgresql.jpg",
     MDB = "mongodb.jpg",
     API = "api.jpg",
+    GIT = "git.jpg",
+    GH = "github.jpg",
 }
 enum certs {
     FULLSTACK = "https://media.licdn.com/dms/image/D4E22AQH2JciUNRY6ZA/feedshare-shrink_2048_1536/0/1689991632684?e=1692835200&v=beta&t=HnFAY1MgshGUmZQkraAm_AirDBJ9GrHzBq8xzgIDLWI",
@@ -364,6 +364,19 @@ const Landing: React.FC<{}> = () => {
                             alt="Telegram @PachecoHDiego"
                             height="40"
                             width="40"
+                            className="socialimg"
+                        />
+                    </a>{" "}
+                    <a
+                        className="social"
+                        href="cven.pdf"
+                        download="Diego-Pacheco-full-stack-resume"
+                        target="blank">
+                        <img
+                            src="cv-icon.png"
+                            alt="Resume Download"
+                            height="40"
+                            width="45"
                             className="socialimg"
                         />
                     </a>

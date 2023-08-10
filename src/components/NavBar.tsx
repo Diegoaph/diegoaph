@@ -99,6 +99,19 @@ export const NavBar: React.FC<{}> = () => {
                         className="socialimg"
                     />
                 </a>
+                <a
+                    className="social"
+                    href="cven.pdf"
+                    download="Diego-Pacheco-full-stack-resume"
+                    target="blank">
+                    <img
+                        src="cv-icon.png"
+                        alt="Resume Download"
+                        height="40"
+                        width="45"
+                        className="socialimg"
+                    />
+                </a>
             </p>
         </div>
     );
@@ -138,6 +151,14 @@ export const NavBar: React.FC<{}> = () => {
                                 <Stack
                                     spacing={2}
                                     direction="row">
+                                    <a
+                                        href="cven.pdf"
+                                        download="Diego-Pacheco-full-stack-resume"
+                                        target="blank">
+                                        <Button variant="outlined">
+                                            Download CV
+                                        </Button>
+                                    </a>{" "}
                                     <NavLink
                                         to={isProjectsPage ? "/" : "/projects"}
                                         style={{
@@ -163,7 +184,6 @@ export const NavBar: React.FC<{}> = () => {
                                                 : "Projects"}
                                         </Button>
                                     </NavLink>
-
                                     <Button
                                         variant="contained"
                                         onClick={handleOpen}>
