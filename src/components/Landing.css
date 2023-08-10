@@ -84,5 +84,9 @@
         .aside {
             margin-top: 2.5rem;
         }
+        .divider {
+            margin-bottom: "5rem";
+            margin-top: "2rem";
+        }
     }
 }
