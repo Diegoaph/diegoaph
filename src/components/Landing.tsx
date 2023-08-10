@@ -62,7 +62,7 @@ const Landing: React.FC<{}> = () => {
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("top")}>
-                            Gallery
+                            Projects Gallery
                         </Button>
                         <Button
                             variant="outlined"
@@ -74,7 +74,7 @@ const Landing: React.FC<{}> = () => {
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("education")}>
-                            Education
+                            My Education
                         </Button>
                         <Button
                             variant="outlined"
@@ -96,7 +96,10 @@ const Landing: React.FC<{}> = () => {
                             spacing={5}
                             justifyContent="space-between"
                             alignItems="center">
-                            <Divider id="top" />
+                            <Divider
+                                className="divider"
+                                id="top"
+                            />
                             <Grid item>
                                 <Header1
                                     className="h1"
@@ -116,6 +119,7 @@ const Landing: React.FC<{}> = () => {
                                 <Gallery />
                             </Grid>
                             <Divider
+                                className="divider"
                                 id="tools-technologies"
                                 style={{
                                     marginBottom: "3rem",
@@ -166,6 +170,7 @@ const Landing: React.FC<{}> = () => {
                                 </span>
                             </Grid>{" "}
                             <Divider
+                                className="divider"
                                 id="education"
                                 style={{
                                     marginBottom: "3rem",
@@ -200,6 +205,7 @@ const Landing: React.FC<{}> = () => {
                                 </span>
                             </Grid>{" "}
                             <Divider
+                                className="divider"
                                 id="about"
                                 style={{
                                     marginBottom: "3rem",
