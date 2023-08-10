@@ -57,7 +57,7 @@ const Landing: React.FC<{}> = () => {
             <Grid container>
                 <Stack
                     direction="row"
-                    spacing={0.3}>
+                    spacing={1}>
                     <header className="aside">
                         <Button
                             variant="outlined"

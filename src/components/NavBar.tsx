@@ -24,15 +24,15 @@ const HoverableH2 = styled("h2")({
         fontSize: "1rem",
     },
 });
-const StyledStack = styled("div")`
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+// const StyledStack = styled("div")`
+//     display: flex;
+//     flex-direction: row;
+//     margin-top: 10px;
 
-    @media (max-width: 400px) {
-        font-size: 1rem;
-    }
-`;
+//     @media (max-width: 400px) {
+//         font-size: 1rem;
+//     }
+// `;
 
 export const NavBar: React.FC<{}> = () => {
     const location = useLocation();
