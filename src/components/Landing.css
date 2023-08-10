@@ -2,6 +2,7 @@
     filter: drop-shadow(0 0 2em #006465);
     cursor: pointer;
 }
+
 .tech-container {
     align-content: center;
     display: flex;
@@ -73,4 +74,15 @@
     );
 
     padding-bottom: 1rem;
+}
+@media (max-width: 860px) {
+    .aside {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 400px) {
+        .aside {
+            margin-top: 5.1rem;
+        }
+    }
 }

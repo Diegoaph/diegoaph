@@ -5,7 +5,6 @@ import {
     Button,
     Container,
     Grid,
-    Stack,
     Toolbar,
     styled,
     Modal,
@@ -20,7 +19,20 @@ const HoverableH2 = styled("h2")({
     "&:hover": {
         textShadow: "0 0 2em #0f928c",
     },
+    "@media (max-width: 400px)": {
+        fontSize: "1rem",
+    },
 });
+const StyledStack = styled("div")`
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    @media (max-width: 400px) {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+`;
 
 export const NavBar: React.FC<{}> = () => {
     const location = useLocation();
@@ -148,9 +160,7 @@ export const NavBar: React.FC<{}> = () => {
                                 </NavLink>
                             </Grid>
                             <Grid item>
-                                <Stack
-                                    spacing={2}
-                                    direction="row">
+                                <StyledStack>
                                     <a
                                         href="cven.pdf"
                                         download="Diego-Pacheco-full-stack-resume"
@@ -210,7 +220,7 @@ export const NavBar: React.FC<{}> = () => {
                                             {modalContent}
                                         </Box>
                                     </Modal>
-                                </Stack>
+                                </StyledStack>
                             </Grid>
                         </Grid>
                     </Container>

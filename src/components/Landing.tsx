@@ -80,19 +80,18 @@ const Landing: React.FC<{}> = () => {
                 </header>
             </Grid>{" "}
             <Container maxWidth="xl">
-                <Grid container>
+                <Grid
+                    container
+                    justifyContent="center"
+                    alignItems="center">
                     <Grid item>
                         <Grid
                             container
                             direction="column"
                             spacing={5}
-                            justifyContent="space-between">
-                            <Divider
-                                id="top"
-                                style={{
-                                    margin: "0rem",
-                                }}
-                            />
+                            justifyContent="space-between"
+                            alignItems="center">
+                            <Divider id="top" />
                             <Grid item>
                                 <Header1
                                     className="h1"
