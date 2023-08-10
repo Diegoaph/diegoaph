@@ -5,6 +5,7 @@ import {
     Container,
     Grid,
     styled,
+    Stack,
     Button,
     Divider,
     Typography,
@@ -54,30 +55,34 @@ const Landing: React.FC<{}> = () => {
     return (
         <Box sx={{ flexGrow: 1, minHeight: "100vh" }}>
             <Grid container>
-                <header className="aside">
-                    <Button
-                        variant="outlined"
-                        onClick={() => handleScrollToSection("top")}>
-                        Gallery
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        onClick={() =>
-                            handleScrollToSection("tools-technologies")
-                        }>
-                        Tools and technologies
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        onClick={() => handleScrollToSection("education")}>
-                        Education
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        onClick={() => handleScrollToSection("about")}>
-                        About Me
-                    </Button>
-                </header>
+                <Stack
+                    direction="row"
+                    spacing={0.3}>
+                    <header className="aside">
+                        <Button
+                            variant="outlined"
+                            onClick={() => handleScrollToSection("top")}>
+                            Gallery
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            onClick={() =>
+                                handleScrollToSection("tools-technologies")
+                            }>
+                            Tools and technologies
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            onClick={() => handleScrollToSection("education")}>
+                            Education
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            onClick={() => handleScrollToSection("about")}>
+                            About Me
+                        </Button>
+                    </header>
+                </Stack>
             </Grid>{" "}
             <Container maxWidth="xl">
                 <Grid

@@ -7,6 +7,7 @@ import {
     Grid,
     Toolbar,
     styled,
+    Stack,
     Modal,
 } from "@mui/material";
 import React from "react";
@@ -159,7 +160,9 @@ export const NavBar: React.FC<{}> = () => {
                                 </NavLink>
                             </Grid>
                             <Grid item>
-                                <StyledStack>
+                                <Stack
+                                    direction="row"
+                                    spacing={0.3}>
                                     <a
                                         href="cven.pdf"
                                         download="Diego-Pacheco-full-stack-resume"
@@ -219,7 +222,7 @@ export const NavBar: React.FC<{}> = () => {
                                             {modalContent}
                                         </Box>
                                     </Modal>
-                                </StyledStack>
+                                </Stack>
                             </Grid>
                         </Grid>
                     </Container>
