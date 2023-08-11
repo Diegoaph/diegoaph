@@ -1,7 +1,6 @@
 import React from "react";
 import { themePalette } from "../config/theme.cofig";
 import {
-    Box,
     Container,
     Grid,
     styled,
@@ -21,6 +20,7 @@ const StyledBox = styled("div")`
 
     @media (max-width: 400px) {
         max-width: 80%;
+        margin-left: 0;
     }
 `;
 const Header1 = styled("h1")({ fontSize: "3rem", marginBottom: "0.1em" });
