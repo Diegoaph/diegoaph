@@ -14,6 +14,15 @@ import "./Landing.css";
 import Gallery from "./Gallery";
 import { NavLink } from "react-router-dom";
 
+const StyledBox = styled("div")`
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    @media (max-width: 400px) {
+        max-width: 80%;
+    }
+`;
 const Header1 = styled("h1")({ fontSize: "3rem", marginBottom: "0.1em" });
 const Header2 = styled("h2")({ fontSize: "2rem" });
 enum pics {
@@ -53,7 +62,7 @@ const Landing: React.FC<{}> = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 1, minHeight: "100vh", maxWidth: "90%" }}>
+        <StyledBox sx={{ flexGrow: 1, minHeight: "100vh", maxWidth: "90%" }}>
             <Grid container>
                 <Stack
                     direction="row"
@@ -393,7 +402,7 @@ const Landing: React.FC<{}> = () => {
                     </a>
                 </p>
             </footer>
-        </Box>
+        </StyledBox>
     );
 };
 
