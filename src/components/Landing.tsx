@@ -135,15 +135,16 @@ const Landing: React.FC<{}> = () => {
                                     className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "2rem",
+                                        marginTop: "5rem",
                                     }}>
                                     Tools and technologies:
                                 </Header2>
                                 <Header2
                                     className="h1"
                                     style={{
+                                        fontSize: "1rem",
                                         color: themePalette.LIGHT,
-                                        marginTop: "2.5rem",
+                                        marginTop: "0rem",
                                     }}>
                                     that i've used on my projects:
                                 </Header2>
