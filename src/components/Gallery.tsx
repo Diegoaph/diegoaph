@@ -1,7 +1,6 @@
 import Carousel from "react-material-ui-carousel";
 import { themePalette } from "../config/theme.cofig";
 import React, { CSSProperties } from "react";
-
 interface ItemProps {
     item: {
         URL: string;
@@ -16,13 +15,15 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         position: "relative",
         textAlign: "center",
         width: "100%",
-        height: "70vh",
+        height: "auto", // Cambiar la altura a "auto" para que se ajuste al contenido
         backgroundColor: themePalette.BG,
         boxShadow: "8px 8px 8px 8px rgba(0, 0, 0, 0.25)",
+        marginBottom: "1rem", // Agregar margen inferior para separar los elementos
     };
 
     const imageStyle: CSSProperties = {
-        maxHeight: "100%",
+        width: "100%", // Hacer que la imagen ocupe el ancho completo del contenedor
+        height: "auto", // Ajustar la altura automáticamente
         borderRadius: "0.5em",
     };
 
@@ -32,7 +33,6 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         backgroundRepeat: "no-repeat",
         background:
             "linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0)",
-
         color: "#fff",
         padding: "10px",
         textAlign: "center",
@@ -40,7 +40,9 @@ const Item: React.FC<ItemProps> = ({ item }) => {
     };
 
     return (
-        <div style={itemContainerStyle}>
+        <div
+            style={itemContainerStyle}
+            className="container">
             <img
                 src={item.URL}
                 alt={item.PROJECT}
