@@ -53,7 +53,7 @@ const Landing: React.FC<{}> = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 0, minHeight: "100vh", maxWidth: "90%" }}>
+        <Box sx={{ flexGrow: 1, minHeight: "100vh", maxWidth: "90%" }}>
             <Grid container>
                 <Stack
                     direction="row"
