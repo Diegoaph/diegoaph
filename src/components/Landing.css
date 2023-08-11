@@ -95,13 +95,16 @@
             margin-bottom: 6rem;
         }
         #tools-technologies {
-            margin-top: 6rem;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
         }
         #education {
-            margin-top: 6rem;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
         }
         #about {
-            margin-top: 6rem;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
         }
     }
 }
