@@ -15,15 +15,15 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         position: "relative",
         textAlign: "center",
         width: "100%",
-        height: "auto", // Cambiar la altura a "auto" para que se ajuste al contenido
+        height: "auto",
         backgroundColor: themePalette.BG,
         boxShadow: "8px 8px 8px 8px rgba(0, 0, 0, 0.25)",
-        marginBottom: "1rem", // Agregar margen inferior para separar los elementos
+        marginBottom: "1rem",
     };
 
     const imageStyle: CSSProperties = {
-        width: "100%", // Hacer que la imagen ocupe el ancho completo del contenedor
-        height: "auto", // Ajustar la altura automáticamente
+        width: "100%",
+        height: "auto",
         borderRadius: "0.5em",
     };
 

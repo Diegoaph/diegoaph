@@ -113,7 +113,7 @@ const Landing: React.FC<{}> = () => {
                                             color: themePalette.LIGHT,
                                             textDecorationColor: "none",
                                         }}>
-                                        Check out my latest projects!
+                                        Check out my latest projects
                                     </NavLink>
                                 </Header1>
                                 <Gallery />
