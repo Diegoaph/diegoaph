@@ -88,5 +88,8 @@
             margin-bottom: "5rem";
             margin-top: "2rem";
         }
+        #top {
+            margin-bottom: 4px;
+        }
     }
 }
