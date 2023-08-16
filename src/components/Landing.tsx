@@ -93,7 +93,7 @@ const Landing: React.FC<{}> = () => {
                     </header>
                 </Stack>
             </Grid>{" "}
-            <Container maxWidth="xl">
+            <Container>
                 <Grid
                     container
                     justifyContent="center"
@@ -359,7 +359,7 @@ const Landing: React.FC<{}> = () => {
                             src="https://1000marcas.net/wp-content/uploads/2019/11/logotipo-Whatsapp.jpg"
                             alt="Whatsapp (+57)302-3449160"
                             height="40"
-                            width="60"
+                            width="62"
                             className="socialimg"
                         />
                     </a>
