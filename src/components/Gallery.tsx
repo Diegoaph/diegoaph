@@ -32,7 +32,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         bottom: 0,
         backgroundRepeat: "no-repeat",
         background:
-            "linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0)",
+            "linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0)",
         color: "#fff",
         padding: "10px",
         textAlign: "center",
