@@ -1,35 +1,35 @@
 import React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
+
+interface Item {
+    img: string;
+    title: string;
+    author: string;
+    URL: string;
+}
 
 const Projects: React.FC<{}> = () => {
     return (
-        <ImageList sx={{ margin: 0, width: "90vw", height: 450 }}>
-            {itemData.map((item) => (
-                <ImageListItem key={item.img}>
-                    <img
-                        src={`${item.img}`}
-                        srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                        alt={item.title}
-                        loading="lazy"
-                    />
-
-                    <strong>
-                        <a href={item.URL}>
-                            <ImageListItemBar
-                                title={item.title}
-                                subtitle={item.author}
-                            />
-                        </a>
-                    </strong>
-                </ImageListItem>
+        <ul>
+            {itemData.map((item: Item, index: number) => (
+                <li key={index}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                        <img
+                            src={item.img}
+                            alt={item.title}
+                            style={{ marginRight: "10px" }}
+                        />
+                        <div>
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                        </div>
+                    </div>
+                </li>
             ))}
-        </ImageList>
+        </ul>
     );
 };
 
-const itemData = [
+const itemData: Item[] = [
     {
         img: "https://media.licdn.com/dms/image/D4E22AQGB_ikLBJWfxA/feedshare-shrink_1280/0/1692148763769?e=1695254400&v=beta&t=Bu_AkVozFAXYP_cDPH3A_wfG6hNDmAZPxvSkUZEYwSU",
         title: "Sunset Sands Hotel",
