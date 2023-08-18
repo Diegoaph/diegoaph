@@ -84,19 +84,19 @@
         max-width: 100vw;
     }
     #top {
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
     }
     #tools-technologies {
         margin-top: 12rem;
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
     }
     #education {
         margin-top: 15rem;
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
     }
     #about {
         margin-top: 22rem;
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
     }
 
     @media (max-width: 400px) {
