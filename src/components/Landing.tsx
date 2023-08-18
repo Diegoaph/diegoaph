@@ -171,8 +171,8 @@ const Landing: React.FC<{}> = () => {
                                                 key={index}
                                                 src={tech}
                                                 alt={tech}
-                                                height="80"
-                                                width="80"
+                                                height="60"
+                                                width="60"
                                                 style={{
                                                     borderRadius: "5px",
                                                     margin: "3px",
