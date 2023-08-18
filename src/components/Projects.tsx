@@ -8,7 +8,8 @@ interface Item {
 }
 
 const Projects: React.FC<{}> = () => {
-    const isMobile = window.innerWidth < 400;
+    const isMobile = window.innerWidth < 350;
+    const isDesktop = window.innerWidth > 1200;
     return (
         <section
             style={{
@@ -25,6 +26,7 @@ const Projects: React.FC<{}> = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
+                        margin: isMobile ? "2rem" : "1rem",
                         marginBottom: "1rem",
                         borderRadius: "10px",
                         boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)",
@@ -37,7 +39,7 @@ const Projects: React.FC<{}> = () => {
                         src={item.img}
                         alt={item.title}
                         style={{
-                            marginRight: "10px",
+                            marginRight: "20px",
                             maxHeight: "30vh",
                             borderRadius: "2rem",
                             padding: "1rem",
