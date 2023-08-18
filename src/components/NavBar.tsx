@@ -129,7 +129,9 @@ export const NavBar: React.FC<{}> = () => {
     );
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box
+            width="100%"
+            sx={{ flexGrow: 1 }}>
             <AppBar position="fixed">
                 <Toolbar>
                     <Container maxWidth="xl">
