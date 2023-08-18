@@ -37,6 +37,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         padding: "10px",
         textAlign: "center",
         width: "100%",
+        maxHeight: "30%",
     };
 
     return (
