@@ -78,6 +78,7 @@
 @media (max-width: 860px) {
     .aside {
         margin-top: 2.3rem;
+        max-width: 100vw;
     }
     #top {
         margin-bottom: 10rem;
@@ -98,10 +99,12 @@
     @media (max-width: 400px) {
         .aside {
             margin-top: 2rem;
+
+            max-width: 100vw;
         }
 
         #top {
-            margin-bottom: 8rem;
+            margin-bottom: 5rem;
         }
         #tools-technologies {
             margin-top: 10rem;
