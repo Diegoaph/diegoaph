@@ -11,6 +11,7 @@
     justify-content: center;
     width: 95%;
     margin: 4rem;
+    border: 1px solid red;
 }
 .certs-container {
     align-content: center;
@@ -20,6 +21,7 @@
     justify-content: center;
     width: 95%;
     margin: 4rem;
+    border: 1px solid red;
 }
 .about-container {
     display: flex;
@@ -28,6 +30,7 @@
     width: 95%;
     margin: 1rem;
     flex-direction: row;
+    border: 1px solid red;
 }
 .foto-container {
     display: flex;
@@ -72,7 +75,7 @@
         rgba(00, 0, 0, 0.01),
         rgba(00, 0, 0, 0)
     );
-
+    border: 1px solid red;
     padding-bottom: 1rem;
 }
 @media (max-width: 860px) {

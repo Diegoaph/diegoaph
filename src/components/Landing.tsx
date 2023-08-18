@@ -62,7 +62,13 @@ const Landing: React.FC<{}> = () => {
     };
 
     return (
-        <StyledBox sx={{ flexGrow: 1, minHeight: "100vh", width: "100%" }}>
+        <StyledBox
+            sx={{
+                flexGrow: 1,
+                minHeight: "100vh",
+                width: "100%",
+                border = "1px solid blue",
+            }}>
             <Grid container>
                 <Stack
                     direction="row"
