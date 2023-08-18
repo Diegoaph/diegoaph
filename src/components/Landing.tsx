@@ -67,7 +67,7 @@ const Landing: React.FC<{}> = () => {
                 flexGrow: 1,
                 minHeight: "100vh",
                 width: "100%",
-                border = "1px solid blue",
+                border: "1px solid blue",
             }}>
             <Grid container>
                 <Stack
