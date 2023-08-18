@@ -12,23 +12,31 @@ const Projects: React.FC<{}> = () => {
         <ul>
             {itemData.map((item: Item, index: number) => (
                 <li key={index}>
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            height: "30vh",
-                            overflow: "hidden",
-                        }}>
-                        <img
-                            src={item.img}
-                            alt={item.title}
-                            style={{ marginRight: "10px", maxHeight: "100%" }}
-                        />
-                        <div>
-                            <h3>{item.title}</h3>
-                            <p>{item.author}</p>
+                    <a
+                        href={item.URL}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                height: "30vh",
+                                overflow: "hidden",
+                            }}>
+                            <img
+                                src={item.img}
+                                alt={item.title}
+                                style={{
+                                    marginRight: "10px",
+                                    maxHeight: "100%",
+                                }}
+                            />
+                            <div>
+                                <h3>{item.title}</h3>
+                                <p>{item.author}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </li>
             ))}
         </ul>
@@ -40,7 +48,7 @@ const itemData: Item[] = [
         img: "https://media.licdn.com/dms/image/D4E22AQGB_ikLBJWfxA/feedshare-shrink_1280/0/1692148763769?e=1695254400&v=beta&t=Bu_AkVozFAXYP_cDPH3A_wfG6hNDmAZPxvSkUZEYwSU",
         title: "Sunset Sands Hotel",
         author: "Booking engine for hotels",
-        URL: "https://devdiego-bookings.vercel.app/",
+        URL: "https://sunsetsandsdev.vercel.app/",
     },
     {
         img: "https://media.licdn.com/dms/image/D4E22AQGowmQwv0dZOw/feedshare-shrink_1280/0/1690911793922?e=1694044800&v=beta&t=DnwiNGiZeVWcPHWUz1VjdEuxct3OT3WdCVQeGyTYKnU",
