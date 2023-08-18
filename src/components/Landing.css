@@ -83,13 +83,15 @@
         max-width: 100vw;
     }
     #top {
-        margin-bottom: 0;
+        margin-bottom: 3rem;
     }
     #tools-technologies {
-        margin-bottom: 8rem;
+        margin-bottom: 0;
+        padding: 2rem;
     }
     #education {
-        margin-top: 8rem;
+        margin-bottom: 0;
+        padding: 2rem;
     }
     #about {
         margin-bottom: 0;
@@ -111,7 +113,7 @@
         }
         #tools-technologies {
             margin-top: 20rem;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
         #education {
             margin-top: 20rem;
@@ -119,7 +121,7 @@
         }
         #about {
             margin-top: 20rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
     }
 }
