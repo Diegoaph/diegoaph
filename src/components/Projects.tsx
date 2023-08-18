@@ -19,10 +19,8 @@ const Projects: React.FC<{}> = () => {
                 alignItems: "center",
                 width: "90vw",
                 alignContent: "center",
-                display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "space-between",
-                width: "95%",
                 margin: "auto",
             }}>
             {itemData.map((item: Item, index: number) => (
