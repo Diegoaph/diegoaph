@@ -79,18 +79,27 @@
     .aside {
         margin-top: 2.3rem;
     }
+    #top {
+        margin-bottom: 10rem;
+    }
+    #tools-technologies {
+        margin-top: 12rem;
+        margin-bottom: 4rem;
+    }
+    #education {
+        margin-top: 15rem;
+        margin-bottom: 4rem;
+    }
+    #about {
+        margin-top: 22rem;
+        margin-bottom: 4rem;
+    }
 
     @media (max-width: 400px) {
         .aside {
             margin-top: 2rem;
         }
-        /* .divider {
-            margin-bottom: "5rem";
-            margin-top: "2rem";
-        } 
-        .h1 {
-            margin-top: 4rem;
-        }*/
+
         #top {
             margin-bottom: 8rem;
         }
