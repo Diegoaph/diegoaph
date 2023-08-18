@@ -2,7 +2,9 @@
     filter: drop-shadow(0 0 2em #006465);
     cursor: pointer;
 }
-
+.description-container {
+    margin-left: 2rem;
+}
 .tech-container {
     align-content: center;
     display: flex;

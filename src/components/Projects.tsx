@@ -9,7 +9,7 @@ interface Item {
 
 const Projects: React.FC<{}> = () => {
     const isMobile = window.innerWidth < 350;
-    //const isDesktop = window.innerWidth > 1200;
+
     return (
         <section
             style={{
@@ -18,6 +18,12 @@ const Projects: React.FC<{}> = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 width: "90vw",
+                alignContent: "center",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-between",
+                width: "95%",
+                margin: "auto",
             }}>
             {itemData.map((item: Item, index: number) => (
                 <a
@@ -34,12 +40,14 @@ const Projects: React.FC<{}> = () => {
                         display: "flex",
                         overflow: "hidden",
                         flexDirection: isMobile ? "column" : "row",
+                        textDecoration: "none", // Añadido estilo de no subrayado
                     }}>
                     <img
                         src={item.img}
                         alt={item.title}
                         style={{
-                            marginRight: "20px",
+                            marginRight: isMobile ? "0" : "20px",
+                            marginBottom: isMobile ? "1rem" : "0",
                             maxHeight: "30vh",
                             borderRadius: "2rem",
                             padding: "1rem",
@@ -54,13 +62,15 @@ const Projects: React.FC<{}> = () => {
                         }}>
                         <h3
                             style={{
-                                fontSize: "Larger",
+                                fontSize: "larger", // Corrección de "Larger" a "larger"
+                                margin: "0", // Agregado margen 0 para evitar espacio en blanco superior
                             }}>
                             {item.title}
                         </h3>
                         <p
                             style={{
-                                fontSize: "Large",
+                                fontSize: "large", // Corrección de "Large" a "large"
+                                margin: "0", // Agregado margen 0 para evitar espacio en blanco superior
                             }}>
                             {item.author}
                         </p>
