@@ -26,9 +26,9 @@ const Projects: React.FC<{}> = () => {
                     style={{
                         marginBottom: "1rem",
                         borderRadius: "10px",
-                        boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)", // Corrección: sintaxis de boxShadow
-                        width: "100%", // Corrección: asegurarse de ocupar todo el ancho
-                        display: "flex", // Corrección: para ajustar el tamaño del contenido interno
+                        boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)",
+                        width: "fit-content",
+                        display: "flex",
                         overflow: "hidden",
                     }}>
                     <img
@@ -36,19 +36,30 @@ const Projects: React.FC<{}> = () => {
                         alt={item.title}
                         style={{
                             marginRight: "10px",
-                            maxHeight: "30vh", // Corrección: limitar la altura
+                            maxHeight: "30vh",
                             borderRadius: "2rem",
+                            padding: "1rem",
                         }}
                     />
                     <div
                         style={{
                             display: "flex",
-                            flexDirection: "column", // Corrección: ajustar alineación vertical
-                            justifyContent: "center", // Corrección: centrado vertical
-                            padding: "1rem", // Corrección: añadir espacio interior
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            padding: "1rem",
                         }}>
-                        <h3>{item.title}</h3>
-                        <p>{item.author}</p>
+                        <h3
+                            style={{
+                                fontSize: "Larger",
+                            }}>
+                            {item.title}
+                        </h3>
+                        <p
+                            style={{
+                                fontSize: "Large",
+                            }}>
+                            {item.author}
+                        </p>
                     </div>
                 </a>
             ))}
