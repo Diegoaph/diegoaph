@@ -8,13 +8,14 @@ interface Item {
 }
 
 const Projects: React.FC<{}> = () => {
+    const isMobile = window.innerWidth < 400;
     return (
         <section
             style={{
                 marginTop: "6rem",
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center", // Corrección: centrado horizontal
+                alignItems: "center",
                 width: "90vw",
             }}>
             {itemData.map((item: Item, index: number) => (
@@ -30,6 +31,7 @@ const Projects: React.FC<{}> = () => {
                         width: "fit-content",
                         display: "flex",
                         overflow: "hidden",
+                        flexDirection: isMobile ? "column" : "row",
                     }}>
                     <img
                         src={item.img}
