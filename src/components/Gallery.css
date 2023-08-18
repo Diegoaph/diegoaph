@@ -9,6 +9,6 @@
         border-radius: 0.5em;
     }
     .textOverlay {
-        bottom: -40%;
+        margin: 0;
     }
 }

@@ -50,11 +50,9 @@ const Item: React.FC<ItemProps> = ({ item }) => {
                 alt={item.PROJECT}
                 style={imageStyle as React.ImgHTMLAttributes<HTMLImageElement>}
             />
-            <div
-                className="textOverlay"
-                style={textOverlayStyle}>
-                <h3>{item.PROJECT}</h3>
-                <p>{item.DETAIL}</p>
+            <div style={textOverlayStyle}>
+                <h3 className="textOverlay">{item.PROJECT}</h3>
+                <p className="textOverlay">{item.DETAIL}</p>
                 <span>
                     {item.TECHNOLOGIES.map((tech: string, index: number) => (
                         <img
