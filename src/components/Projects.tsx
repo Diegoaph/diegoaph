@@ -9,7 +9,15 @@ interface Item {
 
 const Projects: React.FC<{}> = () => {
     return (
-        <section>
+        <section
+            style={{
+                marginTop: "6rem",
+                display: "flex",
+                flexDirection: "column",
+                flexWrap: "wrap",
+                justifyItems: "center",
+                width: "100%",
+            }}>
             {itemData.map((item: Item, index: number) => (
                 <a
                     key={index}
@@ -17,7 +25,6 @@ const Projects: React.FC<{}> = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                        marginTop: "6rem",
                         marginBottom: "1rem",
                         borderRadius: "10px",
                         filter: "box-shadow(0 0 1rem #61dafbaa)",
