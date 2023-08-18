@@ -16,7 +16,7 @@ const Projects: React.FC<{}> = () => {
                 flexDirection: "column",
                 flexWrap: "wrap",
                 justifyItems: "center",
-                width: "100%",
+                width: "90vw",
             }}>
             {itemData.map((item: Item, index: number) => (
                 <a
