@@ -19,7 +19,8 @@ const Projects: React.FC<{}> = () => {
                     style={{
                         marginTop: "3rem",
                         borderRadius: "10px",
-                        filter: "drop-shadow(0 0 1rem #61dafbaa)",
+                        filter: "box-shadow(0 0 1rem #61dafbaa)",
+                        maxWidth: "100%",
                     }}>
                     <div
                         style={{
