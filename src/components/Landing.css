@@ -83,20 +83,20 @@
         margin-bottom: 2rem;
     }
     #tools-technologies {
-        margin-top: 12rem;
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
     }
     #education {
-        margin-top: 15rem;
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
     }
     #about {
-        margin-top: 22rem;
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
         padding: 2rem;
     }
 
     @media (max-width: 400px) {
+        .description-container {
+            margin: 1rem;
+        }
         .aside {
             margin-top: 2rem;
 
