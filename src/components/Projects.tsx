@@ -9,7 +9,7 @@ interface Item {
 
 const Projects: React.FC<{}> = () => {
     const isMobile = window.innerWidth < 350;
-    const isDesktop = window.innerWidth > 1200;
+    //const isDesktop = window.innerWidth > 1200;
     return (
         <section
             style={{
