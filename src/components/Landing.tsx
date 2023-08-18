@@ -68,6 +68,8 @@ const Landing: React.FC<{}> = () => {
                 minHeight: "100vh",
                 width: "100%",
                 border: "1px solid blue",
+                display: "flex",
+                flexDirection: "row",
             }}>
             <Grid container>
                 <Stack
