@@ -248,6 +248,39 @@ const Landing: React.FC<{}> = () => {
                                         item
                                         xs={12}
                                         lg={6}
+                                        className="foto-container">
+                                        <Grid
+                                            container
+                                            direction="column">
+                                            <Grid item>
+                                                <img
+                                                    src="https://avatars.githubusercontent.com/u/103613935?v=4"
+                                                    alt="Diego Pacheco"
+                                                    height="300"
+                                                    width="300"
+                                                    style={{
+                                                        borderRadius: "15px",
+                                                        margin: "3px",
+                                                    }}
+                                                />
+                                            </Grid>
+                                            <Grid item>
+                                                <hr />
+                                                <img
+                                                    src="https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact"
+                                                    alt="diegoaph"
+                                                    style={{
+                                                        borderRadius: "15px",
+                                                        margin: "3px",
+                                                    }}
+                                                />
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        item
+                                        xs={12}
+                                        lg={6}
                                         className="description-container">
                                         <Typography>
                                             <strong>
@@ -291,39 +324,6 @@ const Landing: React.FC<{}> = () => {
                                             record of creating user-focused
                                             dynamic websites.
                                         </Typography>
-                                    </Grid>
-                                    <Grid
-                                        item
-                                        xs={12}
-                                        lg={6}
-                                        className="foto-container">
-                                        <Grid
-                                            container
-                                            direction="column">
-                                            <Grid item>
-                                                <img
-                                                    src="https://avatars.githubusercontent.com/u/103613935?v=4"
-                                                    alt="Diego Pacheco"
-                                                    height="300"
-                                                    width="300"
-                                                    style={{
-                                                        borderRadius: "15px",
-                                                        margin: "3px",
-                                                    }}
-                                                />
-                                            </Grid>
-                                            <Grid item>
-                                                <hr />
-                                                <img
-                                                    src="https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact"
-                                                    alt="diegoaph"
-                                                    style={{
-                                                        borderRadius: "15px",
-                                                        margin: "3px",
-                                                    }}
-                                                />
-                                            </Grid>
-                                        </Grid>
                                     </Grid>
                                 </Grid>
                             </Grid>

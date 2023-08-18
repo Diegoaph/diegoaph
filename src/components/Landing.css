@@ -4,6 +4,7 @@
 }
 .description-container {
     margin-left: 2rem;
+    text-align: left;
 }
 .tech-container {
     align-content: center;
@@ -82,7 +83,7 @@
         max-width: 100vw;
     }
     #top {
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
     }
     #tools-technologies {
         margin-bottom: 8rem;
