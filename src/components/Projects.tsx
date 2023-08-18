@@ -12,7 +12,12 @@ const Projects: React.FC<{}> = () => {
         <ul>
             {itemData.map((item: Item, index: number) => (
                 <li key={index}>
-                    <div style={{ display: "flex", alignItems: "center" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            height: "30vh",
+                        }}>
                         <img
                             src={item.img}
                             alt={item.title}
