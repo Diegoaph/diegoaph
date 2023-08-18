@@ -21,7 +21,6 @@ const Projects: React.FC<{}> = () => {
                 alignContent: "center",
                 flexWrap: "wrap",
                 justifyContent: "space-between",
-                margin: "auto",
             }}>
             {itemData.map((item: Item, index: number) => (
                 <a
