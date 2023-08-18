@@ -69,7 +69,7 @@ const Landing: React.FC<{}> = () => {
                 width: "100%",
                 border: "1px solid blue",
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
             }}>
             <Grid container>
                 <Stack
