@@ -17,11 +17,12 @@ const Projects: React.FC<{}> = () => {
                             display: "flex",
                             alignItems: "center",
                             height: "30vh",
+                            overflow: "hidden",
                         }}>
                         <img
                             src={item.img}
                             alt={item.title}
-                            style={{ marginRight: "10px" }}
+                            style={{ marginRight: "10px", maxHeight: "100%" }}
                         />
                         <div>
                             <h3>{item.title}</h3>
