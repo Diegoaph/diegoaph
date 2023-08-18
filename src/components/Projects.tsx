@@ -9,37 +9,36 @@ interface Item {
 
 const Projects: React.FC<{}> = () => {
     return (
-        <ul>
+        <section>
             {itemData.map((item: Item, index: number) => (
-                <li key={index}>
-                    <a
-                        href={item.URL}
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <div
+                <a
+                    key={index}
+                    href={item.URL}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            height: "30vh",
+                            overflow: "hidden",
+                        }}>
+                        <img
+                            src={item.img}
+                            alt={item.title}
                             style={{
-                                display: "flex",
-                                alignItems: "center",
-                                height: "30vh",
-                                overflow: "hidden",
-                            }}>
-                            <img
-                                src={item.img}
-                                alt={item.title}
-                                style={{
-                                    marginRight: "10px",
-                                    maxHeight: "100%",
-                                }}
-                            />
-                            <div>
-                                <h3>{item.title}</h3>
-                                <p>{item.author}</p>
-                            </div>
+                                marginRight: "10px",
+                                maxHeight: "100%",
+                            }}
+                        />
+                        <div>
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
                         </div>
-                    </a>
-                </li>
+                    </div>
+                </a>
             ))}
-        </ul>
+        </section>
     );
 };
 
