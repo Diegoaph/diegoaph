@@ -15,7 +15,12 @@ const Projects: React.FC<{}> = () => {
                     key={index}
                     href={item.URL}
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    style={{
+                        marginTop: "3rem",
+                        borderRadius: "10px",
+                        filter: "drop-shadow(0 0 1rem #61dafbaa)",
+                    }}>
                     <div
                         style={{
                             display: "flex",
