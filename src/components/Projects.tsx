@@ -14,8 +14,7 @@ const Projects: React.FC<{}> = () => {
                 marginTop: "6rem",
                 display: "flex",
                 flexDirection: "column",
-                flexWrap: "wrap",
-                justifyItems: "center",
+                alignItems: "center", // Corrección: centrado horizontal
                 width: "90vw",
             }}>
             {itemData.map((item: Item, index: number) => (
@@ -27,28 +26,29 @@ const Projects: React.FC<{}> = () => {
                     style={{
                         marginBottom: "1rem",
                         borderRadius: "10px",
-                        filter: "box-shadow(0 0 1rem #61dafbaa)",
-                        maxWidth: "100%",
+                        boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)", // Corrección: sintaxis de boxShadow
+                        width: "100%", // Corrección: asegurarse de ocupar todo el ancho
+                        display: "flex", // Corrección: para ajustar el tamaño del contenido interno
+                        overflow: "hidden",
                     }}>
+                    <img
+                        src={item.img}
+                        alt={item.title}
+                        style={{
+                            marginRight: "10px",
+                            maxHeight: "30vh", // Corrección: limitar la altura
+                            borderRadius: "2rem",
+                        }}
+                    />
                     <div
                         style={{
                             display: "flex",
-                            alignItems: "center",
-                            height: "30vh",
-                            overflow: "hidden",
+                            flexDirection: "column", // Corrección: ajustar alineación vertical
+                            justifyContent: "center", // Corrección: centrado vertical
+                            padding: "1rem", // Corrección: añadir espacio interior
                         }}>
-                        <img
-                            src={item.img}
-                            alt={item.title}
-                            style={{
-                                marginRight: "10px",
-                                maxHeight: "100%",
-                            }}
-                        />
-                        <div>
-                            <h3>{item.title}</h3>
-                            <p>{item.author}</p>
-                        </div>
+                        <h3>{item.title}</h3>
+                        <p>{item.author}</p>
                     </div>
                 </a>
             ))}
