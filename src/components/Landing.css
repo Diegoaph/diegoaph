@@ -10,7 +10,7 @@
     justify-content: space-between;
     justify-content: center;
     width: 95%;
-    margin: 4rem;
+    margin: auto;
     border: 1px solid red;
 }
 .certs-container {
@@ -20,7 +20,7 @@
     justify-content: space-between;
     justify-content: center;
     width: 95%;
-    margin: 4rem;
+    margin: auto;
     border: 1px solid red;
 }
 .about-container {
