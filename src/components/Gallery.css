@@ -8,4 +8,7 @@
         object-fit: cover;
         border-radius: 0.5em;
     }
+    .textOverlay {
+        bottom: -40%;
+    }
 }

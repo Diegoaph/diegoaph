@@ -49,7 +49,9 @@ const Item: React.FC<ItemProps> = ({ item }) => {
                 alt={item.PROJECT}
                 style={imageStyle as React.ImgHTMLAttributes<HTMLImageElement>}
             />
-            <div style={textOverlayStyle}>
+            <div
+                className="textOverlay"
+                style={textOverlayStyle}>
                 <h3>{item.PROJECT}</h3>
                 <p>{item.DETAIL}</p>
                 <span>
