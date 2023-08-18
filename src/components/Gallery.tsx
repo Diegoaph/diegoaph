@@ -34,11 +34,12 @@ const Item: React.FC<ItemProps> = ({ item }) => {
         background:
             "linear-gradient(90deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0)",
         color: "#fff",
-        padding: "10px",
+        padding: "0 10px",
         textAlign: "center",
         width: "100%",
         maxHeight: "30%",
-        border: "1px solid red",
+        overflow: "auto",
+        boxSizing: "border-box",
     };
 
     return (
@@ -51,8 +52,8 @@ const Item: React.FC<ItemProps> = ({ item }) => {
                 style={imageStyle as React.ImgHTMLAttributes<HTMLImageElement>}
             />
             <div style={textOverlayStyle}>
-                <h3 className="textOverlay">{item.PROJECT}</h3>
-                <p className="textOverlay">{item.DETAIL}</p>
+                <h3 style={{ margin: "0", padding: "5px" }}>{item.PROJECT}</h3>
+                <p style={{ margin: "0", padding: "5px" }}>{item.DETAIL}</p>
                 <span>
                     {item.TECHNOLOGIES.map((tech: string, index: number) => (
                         <img
