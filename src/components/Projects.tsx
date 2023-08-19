@@ -34,7 +34,7 @@ const Projects: React.FC<{}> = () => {
                         marginBottom: "1rem",
                         borderRadius: "10px",
                         boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)",
-                        width: "100%",
+                        width: "max-content",
                         display: "flex",
                         overflow: "hidden",
                         flexDirection: "row",
