@@ -55,3 +55,8 @@
     font-size: large;
     margin: 0;
 }
+@media (max-width: 400px) {
+    .a {
+        flex-direction: column;
+    }
+}

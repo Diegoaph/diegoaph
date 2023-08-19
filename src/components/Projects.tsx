@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Projects.module.css"; // Importa los estilos del módulo CSS
+import styles from "./Projects.module.css";
 
 interface Item {
     img: string;
@@ -9,8 +9,6 @@ interface Item {
 }
 
 const Projects: React.FC<{}> = () => {
-    const isMobile = window.innerWidth < 350;
-
     return (
         <section className={styles.container}>
             {itemData.map((item: Item, index: number) => (
@@ -19,7 +17,7 @@ const Projects: React.FC<{}> = () => {
                     href={item.URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${styles.a} ${isMobile ? styles.mobileA : ""}`}>
+                    className={styles.a}>
                     <img
                         src={item.img}
                         alt={item.title}
