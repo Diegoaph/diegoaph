@@ -60,7 +60,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     justify-content: space-around;
     gap: 1rem;
     padding: 0.5rem;
