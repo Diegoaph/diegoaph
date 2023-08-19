@@ -32,7 +32,7 @@ export const NavBar: React.FC<{}> = () => {
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
     const [open, setOpen] = useState(false);
-    const [Lang, setLang] = useState(false);
+    const [Lang, setLang] = useState(true);
 
     const handleOpen = () => {
         setOpen(true);
@@ -170,7 +170,7 @@ export const NavBar: React.FC<{}> = () => {
                                         <Button variant="outlined">
                                             {Lang
                                                 ? "Download CV"
-                                                : "Descargar currículum"}
+                                                : "Descargar CV"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
@@ -194,14 +194,18 @@ export const NavBar: React.FC<{}> = () => {
                                                 },
                                             }}>
                                             {isProjectsPage
-                                                ? "Home"
-                                                : "Projects"}
+                                                ? Lang
+                                                    ? "Home"
+                                                    : "Inicio"
+                                                : Lang
+                                                ? "Projects"
+                                                : "Proyectos"}
                                         </Button>
                                     </NavLink>
                                     <Button
                                         variant="contained"
                                         onClick={handleOpen}>
-                                        Contact
+                                        {Lang ? "Contact" : "Contacto"}
                                     </Button>
                                     <Modal
                                         open={open}
