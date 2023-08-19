@@ -17,7 +17,7 @@
     width: max-content;
     display: flex;
     overflow: hidden;
-    flex-direction: row;
+    flex-wrap: wrap;
     text-decoration: none;
     max-width: 90%;
 }
