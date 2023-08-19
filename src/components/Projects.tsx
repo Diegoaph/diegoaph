@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./Projects.css";
+
 interface Item {
     img: string;
     title: string;
@@ -9,69 +9,21 @@ interface Item {
 }
 
 const Projects: React.FC<{}> = () => {
-    const isMobile = window.innerWidth < 350;
-
     return (
-        <section
-            style={{
-                marginTop: "6rem",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                width: "90vw",
-                alignContent: "center",
-                flexWrap: "wrap",
-                justifyContent: "space-between",
-            }}>
+        <section>
             {itemData.map((item: Item, index: number) => (
                 <a
                     key={index}
                     href={item.URL}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                        margin: isMobile ? "2rem" : "1rem",
-                        marginBottom: "1rem",
-                        borderRadius: "10px",
-                        boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)",
-                        width: "max-content",
-                        display: "flex",
-                        overflow: "hidden",
-                        flexDirection: "row",
-                        textDecoration: "none",
-                    }}>
+                    rel="noopener noreferrer">
                     <img
                         src={item.img}
                         alt={item.title}
-                        style={{
-                            marginRight: isMobile ? "0" : "20px",
-                            marginBottom: isMobile ? "1rem" : "0",
-                            maxHeight: "30vh",
-                            borderRadius: "2rem",
-                            padding: "1rem",
-                        }}
                     />
-                    <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "center",
-                            padding: "1rem",
-                        }}>
-                        <h3
-                            style={{
-                                fontSize: "larger", // Corrección de "Larger" a "larger"
-                                margin: "0", // Agregado margen 0 para evitar espacio en blanco superior
-                            }}>
-                            {item.title}
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "large", // Corrección de "Large" a "large"
-                                margin: "0", // Agregado margen 0 para evitar espacio en blanco superior
-                            }}>
-                            {item.author}
-                        </p>
+                    <div>
+                        <h3>{item.title}</h3>
+                        <p>{item.author}</p>
                     </div>
                 </a>
             ))}
