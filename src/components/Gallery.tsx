@@ -14,8 +14,8 @@ const Item: React.FC<ItemProps> = ({ item }) => {
     const itemContainerStyle: CSSProperties = {
         position: "relative",
         textAlign: "center",
-        width: "100%",
-        height: "auto",
+        width: "auto",
+        height: "70%",
         backgroundColor: themePalette.BG,
         boxShadow: "8px 8px 8px 8px rgba(0, 0, 0, 0.25)",
         marginBottom: "1rem",

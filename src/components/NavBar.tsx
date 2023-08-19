@@ -113,8 +113,8 @@ export const NavBar: React.FC<{}> = () => {
                     className="social"
                     href={
                         Lang
-                            ? "Diego_Pacheco_Full_Stack_cven"
-                            : "Diego_Pacheco_Full_Stack_cves"
+                            ? "Diego_Pacheco_Full_Stack_cven.pdf"
+                            : "Diego_Pacheco_Full_Stack_cves.pdf"
                     }
                     download="Diego-Pacheco-full-stack-CV"
                     target="blank">
@@ -170,8 +170,8 @@ export const NavBar: React.FC<{}> = () => {
                                     <a
                                         href={
                                             Lang
-                                                ? "Diego_Pacheco_Full_Stack_cven"
-                                                : "Diego_Pacheco_Full_Stack_cves"
+                                                ? "Diego_Pacheco_Full_Stack_cven.pdf"
+                                                : "Diego_Pacheco_Full_Stack_cves.pdf"
                                         }
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
