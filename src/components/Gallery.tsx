@@ -310,17 +310,28 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQF-VPcR1z07wg/feedshare-shrink_800/0/1690605400062?e=1693440000&v=beta&t=PEHS-Re3bgHA7Tq5fuTP8FDTNmd_gUaljaVkyyJycjA",
-            PROJECT: "Rick & Morty Character Catalog",
-            DETAIL: "FAVs page, showing genre filter",
-            TECHNOLOGIES: [
-                pics.JS,
-                pics.REACT,
-                pics.CSS,
-                pics.NODE,
-                pics.EX,
-                pics.API,
-            ],
+            URL: "https://media.licdn.com/dms/image/D4E22AQFUihJPKxfYEg/feedshare-shrink_1280/0/1692412312173?e=1695254400&v=beta&t=8Z9LhPkW27uy1gfIKHgTkY9dzutjyQk7Y8fm9O44FC0",
+            PROJECT: "Professional Portfolio",
+            DETAIL: "About Diego",
+            TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
+        },
+        {
+            URL: "https://media.licdn.com/dms/image/D4E22AQHfrA8JZd988A/feedshare-shrink_1280/0/1692412317888?e=1695254400&v=beta&t=9ZrNtX5nIjCR4w7wIyGM90ziWz6WjIO33M-3yxLyq_E",
+            PROJECT: "Professional Portfolio",
+            DETAIL: "Projects gallery",
+            TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
+        },
+        {
+            URL: "https://media.licdn.com/dms/image/D4E22AQFI79zBeBoBbA/feedshare-shrink_1280/0/1692412317938?e=1695254400&v=beta&t=FYW_JGmo6TschGvz15WyMJYegy_lEkoxsnL0sxz_3J8",
+            PROJECT: "Professional Portfolio",
+            DETAIL: "Projects List",
+            TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
+        },
+        {
+            URL: "https://media.licdn.com/dms/image/D4E22AQE-RSsoyrYx1w/feedshare-shrink_1280/0/1692412316659?e=1695254400&v=beta&t=Kc7mikIwEOqUFjcsX8fx4UAtkNOQSHlf1kalwFShABU",
+            PROJECT: "Professional Portfolio",
+            DETAIL: "Screens",
+            TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
     ];
 
