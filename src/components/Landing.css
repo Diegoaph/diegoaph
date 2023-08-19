@@ -5,7 +5,6 @@
 .description-container {
     padding-left: 2rem;
     text-align: left;
-    border: 1px solid red;
 }
 .tech-container {
     align-content: center;
@@ -15,7 +14,6 @@
     justify-content: center;
     width: 95%;
     margin: auto;
-    border: 1px solid red;
 }
 .certs-container {
     align-content: center;
@@ -25,23 +23,20 @@
     justify-content: center;
     width: 95%;
     margin: auto;
-    border: 1px solid red;
 }
 .about-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 95%;
+    width: 90%;
     margin: 1rem;
     flex-direction: row;
-    border: 1px solid red;
 }
 .foto-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid red;
 }
 .word {
     font-weight: bolder;
@@ -70,7 +65,6 @@
     gap: 1rem;
     padding: 0.5rem;
     background-color: #484848;
-    border: 1px solid red;
 }
 
 .footer {

@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./Projects.css";
 interface Item {
     img: string;
     title: string;
@@ -36,7 +37,7 @@ const Projects: React.FC<{}> = () => {
                         width: "100%",
                         display: "flex",
                         overflow: "hidden",
-                        flexDirection: !isMobile ? "row" : "column",
+                        flexDirection: "row",
                         textDecoration: "none",
                     }}>
                     <img
