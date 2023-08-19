@@ -25,6 +25,7 @@ const Projects: React.FC<{}> = () => {
             }}>
             {itemData.map((item: Item, index: number) => (
                 <a
+                    className="a"
                     key={index}
                     href={item.URL}
                     target="_blank"

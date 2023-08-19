@@ -1,5 +1,5 @@
 @media (max-width: 400px) {
-    a {
+    .a {
         flex-direction: column;
     }
 }
