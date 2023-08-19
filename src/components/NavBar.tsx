@@ -111,8 +111,12 @@ export const NavBar: React.FC<{}> = () => {
                 </a>
                 <a
                     className="social"
-                    href="cven.pdf"
-                    download="Diego-Pacheco-full-stack-resume"
+                    href={
+                        Lang
+                            ? "Diego_Pacheco_Full_Stack_cven"
+                            : "Diego_Pacheco_Full_Stack_cves"
+                    }
+                    download="Diego-Pacheco-full-stack-CV"
                     target="blank">
                     <img
                         src="cv-icon.png"
@@ -164,7 +168,11 @@ export const NavBar: React.FC<{}> = () => {
                                     direction="row"
                                     spacing={0.3}>
                                     <a
-                                        href="cven.pdf"
+                                        href={
+                                            Lang
+                                                ? "Diego_Pacheco_Full_Stack_cven"
+                                                : "Diego_Pacheco_Full_Stack_cves"
+                                        }
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
