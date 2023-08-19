@@ -36,7 +36,7 @@ const Projects: React.FC<{}> = () => {
                         width: "100%",
                         display: "flex",
                         overflow: "hidden",
-                        flexDirection: "column",
+                        flexDirection: !isMobile ? "row" : "column",
                         textDecoration: "none",
                     }}>
                     <img
