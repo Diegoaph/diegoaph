@@ -36,8 +36,8 @@ const Projects: React.FC<{}> = () => {
                         width: "100%",
                         display: "flex",
                         overflow: "hidden",
-                        flexDirection: isMobile ? "column" : "row",
-                        textDecoration: "none", // Añadido estilo de no subrayado
+                        flexDirection: "column",
+                        textDecoration: "none",
                     }}>
                     <img
                         src={item.img}
