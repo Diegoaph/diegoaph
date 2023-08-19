@@ -1,0 +1,57 @@
+.container {
+    /* Estilos para el contenedor del section */
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.a {
+    /* Estilos generales para el enlace a */
+    margin: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(97, 218, 251, 0.67);
+    width: max-content;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.mobileA {
+    /* Estilos adicionales para dispositivos móviles */
+    flex-direction: column;
+}
+
+.image {
+    /* Estilos para la imagen */
+    margin-right: 20px;
+    max-height: 30vh;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.details {
+    /* Estilos para los detalles */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.title {
+    /* Estilos para el título */
+    font-size: larger;
+    margin: 0;
+}
+
+.author {
+    /* Estilos para el autor */
+    font-size: large;
+    margin: 0;
+}

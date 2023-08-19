@@ -1,6 +1,6 @@
 import React from "react";
+import styles from "./Projects.module.css"; // Importa los estilos del módulo CSS
 
-import "./Projects.css";
 interface Item {
     img: string;
     title: string;
@@ -12,74 +12,28 @@ const Projects: React.FC<{}> = () => {
     const isMobile = window.innerWidth < 350;
 
     return (
-        <section
-            style={{
-                marginTop: "6rem",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                width: "90vw",
-                alignContent: "center",
-                flexWrap: "wrap",
-                justifyContent: "space-between",
-            }}>
+        <section className={styles.container}>
             {itemData.map((item: Item, index: number) => (
                 <a
-                    className="a"
                     key={index}
                     href={item.URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                        margin: isMobile ? "2rem" : "1rem",
-                        marginBottom: "1rem",
-                        borderRadius: "10px",
-                        boxShadow: "0 0 1rem rgba(97, 218, 251, 0.67)",
-                        width: "max-content",
-                        display: "flex",
-                        overflow: "hidden",
-                        flexDirection: "row",
-                        textDecoration: "none",
-                    }}>
+                    className={`${styles.a} ${isMobile ? styles.mobileA : ""}`}>
                     <img
                         src={item.img}
                         alt={item.title}
-                        style={{
-                            marginRight: isMobile ? "0" : "20px",
-                            marginBottom: isMobile ? "1rem" : "0",
-                            maxHeight: "30vh",
-                            borderRadius: "2rem",
-                            padding: "1rem",
-                        }}
+                        className={styles.image}
                     />
-                    <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "center",
-                            padding: "1rem",
-                        }}>
-                        <h3
-                            style={{
-                                fontSize: "larger",
-                                margin: "0",
-                            }}>
-                            {item.title}
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "large",
-                                margin: "0",
-                            }}>
-                            {item.author}
-                        </p>
+                    <div className={styles.details}>
+                        <h3 className={styles.title}>{item.title}</h3>
+                        <p className={styles.author}>{item.author}</p>
                     </div>
                 </a>
             ))}
         </section>
     );
 };
-
 const itemData: Item[] = [
     {
         img: "https://media.licdn.com/dms/image/D4E22AQGB_ikLBJWfxA/feedshare-shrink_1280/0/1692148763769?e=1695254400&v=beta&t=Bu_AkVozFAXYP_cDPH3A_wfG6hNDmAZPxvSkUZEYwSU",
