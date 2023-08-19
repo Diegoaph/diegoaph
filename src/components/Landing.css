@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 0.1rem;
     padding-top: 7rem;
     background-color: #484848;
 }
@@ -78,6 +78,22 @@
         rgba(00, 0, 0, 0)
     );
     padding-bottom: 1rem;
+}
+
+#top {
+    margin-bottom: 3.5rem;
+}
+#tools-technologies {
+    margin-bottom: 0;
+    padding: 2rem;
+}
+#education {
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+#about {
+    margin-bottom: 1rem;
+    padding: 2rem;
 }
 @media (max-width: 860px) {
     .aside {
