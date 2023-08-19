@@ -1,5 +1,4 @@
 .container {
-    /* Estilos para el contenedor del section */
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
 }
 
 .a {
-    /* Estilos generales para el enlace a */
     margin: 1rem;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -21,23 +19,17 @@
     overflow: hidden;
     flex-direction: row;
     text-decoration: none;
-}
-
-.mobileA {
-    /* Estilos adicionales para dispositivos móviles */
-    flex-direction: column;
+    max-width: 90%;
 }
 
 .image {
-    /* Estilos para la imagen */
     margin-right: 20px;
     max-height: 30vh;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1rem;
 }
 
 .details {
-    /* Estilos para los detalles */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,13 +37,11 @@
 }
 
 .title {
-    /* Estilos para el título */
     font-size: larger;
     margin: 0;
 }
 
 .author {
-    /* Estilos para el autor */
     font-size: large;
     margin: 0;
 }
