@@ -10,6 +10,7 @@ import {
     Stack,
     Modal,
 } from "@mui/material";
+import TranslateIcon from "@mui/icons-material/Translate";
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
@@ -31,6 +32,7 @@ export const NavBar: React.FC<{}> = () => {
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
     const [open, setOpen] = useState(false);
+    const [Lang, setLang] = useState(false);
 
     const handleOpen = () => {
         setOpen(true);
@@ -39,10 +41,13 @@ export const NavBar: React.FC<{}> = () => {
     const handleClose = () => {
         setOpen(false);
     };
+    const handleLang = () => {
+        setLang(!Lang);
+    };
 
     const modalContent = (
         <div>
-            <h4>Connect with me</h4>
+            <h4>{Lang ? "Connect with me" : "Contáctate conmigo"}</h4>
             <p>
                 <a
                     className="social"
@@ -163,7 +168,9 @@ export const NavBar: React.FC<{}> = () => {
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
-                                            Download CV
+                                            {Lang
+                                                ? "Download CV"
+                                                : "Descargar currículum"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
@@ -217,6 +224,7 @@ export const NavBar: React.FC<{}> = () => {
                                             {modalContent}
                                         </Box>
                                     </Modal>
+                                    <TranslateIcon onClick={handleLang} />
                                 </Stack>
                             </Grid>
                         </Grid>
