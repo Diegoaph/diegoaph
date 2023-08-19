@@ -168,7 +168,7 @@ export const NavBar: React.FC<{}> = () => {
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
-                                            {Lang ? "My CV⇣" : "Mi CV⇣"}
+                                            {Lang ? "CV⇣" : "CV⇣"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
@@ -227,7 +227,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </Box>
                                     </Modal>
                                     <Button
-                                        variant="outlined"
+                                        variant="contained"
                                         sx={{
                                             color: themePalette.LIGHT,
                                             borderColor: themePalette.MID,
