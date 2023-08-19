@@ -17,6 +17,7 @@ import { useState } from "react";
 const HoverableH2 = styled("h2")({
     margin: "2px",
     marginTop: "5px",
+    alignItems: "center",
     "&:hover": {
         textShadow: "0 0 2em #0f928c",
     },
@@ -24,15 +25,6 @@ const HoverableH2 = styled("h2")({
         fontSize: "1rem",
     },
 });
-// const StyledStack = styled("div")`
-//     display: flex;
-//     flex-direction: row;
-//     margin-top: 10px;
-
-//     @media (max-width: 400px) {
-//         font-size: 1rem;
-//     }
-// `;
 
 export const NavBar: React.FC<{}> = () => {
     const location = useLocation();
