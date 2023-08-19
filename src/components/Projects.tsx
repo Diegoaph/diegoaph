@@ -52,7 +52,7 @@ const itemData: Item[] = [
         URL: "https://devdiego-rickymorty.vercel.app/",
     },
     {
-        img: "https://media.licdn.com/dms/image/D4E22AQFO6O8kKc4ZoQ/feedshare-shrink_800/0/1690605400142?e=1693440000&v=beta&t=4c0Z3S5sOLwhXAWwqzS7dA_Q-uX72gzBghRsAoZY1bo",
+        img: "https://media.licdn.com/dms/image/D4E22AQE-RSsoyrYx1w/feedshare-shrink_1280/0/1692412316659?e=1695254400&v=beta&t=Kc7mikIwEOqUFjcsX8fx4UAtkNOQSHlf1kalwFShABU",
         title: "Portfolio",
         author: "This, my own portfolio",
         URL: "https://devdiego.vercel.app/",
