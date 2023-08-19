@@ -168,9 +168,7 @@ export const NavBar: React.FC<{}> = () => {
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
-                                            {Lang
-                                                ? "Download CV"
-                                                : "Descargar CV"}
+                                            {Lang ? "My CV⇣" : "Mi CV⇣"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
@@ -228,7 +226,21 @@ export const NavBar: React.FC<{}> = () => {
                                             {modalContent}
                                         </Box>
                                     </Modal>
-                                    <TranslateIcon onClick={handleLang} />
+                                    <Button
+                                        variant="outlined"
+                                        sx={{
+                                            color: themePalette.LIGHT,
+                                            borderColor: themePalette.MID,
+                                            "&:hover": {
+                                                backgroundColor:
+                                                    themePalette.DARK,
+                                                borderColor: themePalette.MID,
+                                                boxShadow: themePalette.LIGHT,
+                                            },
+                                        }}
+                                        onClick={handleLang}>
+                                        <TranslateIcon />
+                                    </Button>
                                 </Stack>
                             </Grid>
                         </Grid>
