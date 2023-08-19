@@ -227,7 +227,6 @@ export const NavBar: React.FC<{}> = () => {
                                         </Box>
                                     </Modal>
                                     <Button
-                                        variant="contained"
                                         sx={{
                                             color: themePalette.LIGHT,
                                             borderColor: themePalette.MID,
