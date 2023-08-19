@@ -17,6 +17,7 @@ import { useState } from "react";
 const HoverableH2 = styled("h2")({
     margin: "2px",
     marginTop: "5px",
+    display: "flex",
     alignItems: "center",
     "&:hover": {
         textShadow: "0 0 2em #0f928c",
