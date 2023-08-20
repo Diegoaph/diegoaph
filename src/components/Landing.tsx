@@ -354,52 +354,53 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                                         Ofrezco soluciones
                                                         centradas en el usuario!
                                                     </strong>
-                                                    <br />I leverage my
-                                                    experience as a Full-Stack
-                                                    Web Developer to deliver
-                                                    efficient and scalable web
-                                                    solutions. <br /> <br />
-                                                    My journey has deepened my
-                                                    understanding of seamlessly
-                                                    integrating form and
-                                                    function in web
-                                                    development.I quickly adapt
-                                                    to emerging technological
-                                                    trends, ensuring I stay at
-                                                    the forefront.
                                                     <br />
-                                                    <br /> Continuously honing
-                                                    my skills guarantees that my
-                                                    projects are not only
-                                                    innovative but also aligned
-                                                    with industry shifts.
+                                                    IAprovecho mi experiencia
+                                                    como Desarrollador Web Full
+                                                    Stack para entregar
+                                                    soluciones web eficientes y
+                                                    escalables. <br /> <br />
+                                                    Mi experiencia ha reforzado
+                                                    mi comprensión de fondo y
+                                                    forma del desarrollo web. Me
+                                                    adapto rápidamente a las
+                                                    tecnologías emergentes,
+                                                    asegurando mantenerme a la
+                                                    vanguardia.
                                                     <br />
-                                                    <br /> User-centered design
-                                                    defines my approach.
-                                                    Detail-oriented, I create
-                                                    immersive web experiences by
-                                                    meticulously considering
-                                                    every pixel and line of
-                                                    code. Prioritizing aesthetic
-                                                    appeal and seamless
-                                                    functionality, I ensure
-                                                    successful outcomes in
-                                                    projects. Client
-                                                    satisfaction drives me.
+                                                    <br /> El perfeccionamiento
+                                                    constante de mis habilidades
+                                                    garantiza que mis proyectos
+                                                    no solo sean innovadores,
+                                                    sino que también estén
+                                                    alineados con los cambios de
+                                                    la industria.
+                                                    <br />
+                                                    <br /> El diseño centrado en
+                                                    el usuario define mi
+                                                    enfoque. Orientado a los
+                                                    detalles, puedo crear
+                                                    experiencias web inmersivas
+                                                    al considerar
+                                                    meticulosamente cada píxel y
+                                                    línea de código. Al
+                                                    priorizar el atractivo
+                                                    estético y la funcionalidad
+                                                    fluida, aseguro resultados
+                                                    exitosos en los proyectos.
+                                                    La satisfacción del cliente
+                                                    me impulsa.
                                                     <br />
                                                     <br />
-                                                    Effective communication,
-                                                    punctual deliveries, and
-                                                    exceeding expectations
-                                                    support my collaborations.
-                                                    Carefully curating web
-                                                    solutions, I accurately
-                                                    translate clients' visions
-                                                    into reality. As a
-                                                    Full-Stack Web Developer, I
-                                                    bring a proven track record
-                                                    of creating user-focused
-                                                    dynamic websites.
+                                                    La comunicación efectiva,
+                                                    las entregas puntuales y
+                                                    superar las expectativas
+                                                    respaldan mis
+                                                    colaboraciones. Al curar
+                                                    cuidadosamente soluciones
+                                                    web, traduzco con precisión
+                                                    las visiones de los clientes
+                                                    en realidad.
                                                 </p>
                                             )}
                                         </Typography>
