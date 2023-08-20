@@ -4,9 +4,9 @@ import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 import RouterLayout from "./components/RouterLayout";
 
-interface LangProp {
-    lang: boolean;
-}
+// interface LangProp {
+//     lang: boolean;
+// }
 
 const AppRouter: React.FC = () => {
     const [lang, setLang] = useState<boolean>(true);
