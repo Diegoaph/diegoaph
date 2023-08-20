@@ -129,7 +129,9 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                             color: themePalette.LIGHT,
                                             textDecorationColor: "none",
                                         }}>
-                                        Check out my latest projects
+                                        {lang
+                                            ? "Checkout my latest Projects"
+                                            : "Dale un vistazo a mis proyectos"}
                                     </NavLink>
                                 </Header1>
                                 <Gallery />
@@ -153,7 +155,9 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "5rem",
                                     }}>
-                                    Tools and technologies:
+                                    {lang
+                                        ? "Tool and technologies"
+                                        : "Tecnologías y herramientas"}
                                 </Header2>
                                 <Header2
                                     className="h1"
@@ -162,7 +166,9 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "0rem",
                                     }}>
-                                    that i've used on my projects:
+                                    {lang
+                                        ? "that i've used on my projects:"
+                                        : "que he usado en mis proyectos:"}
                                 </Header2>
                                 <span className="tech-container">
                                     {Object.values(pics).map((tech, index) => (
@@ -201,7 +207,9 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "3rem",
                                     }}>
-                                    My Full-Stack formation
+                                    {lang
+                                        ? "My Flull-Stack Dev Formation"
+                                        : "Mi formación como desarrollador web"}
                                 </Header2>{" "}
                                 <span className="certs-container">
                                     {Object.values(certs).map((cert, index) => (
@@ -285,46 +293,113 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         lg={6}
                                         className="description-container">
                                         <Typography>
-                                            <strong>
-                                                Creating User-Centric Solutions
-                                            </strong>{" "}
-                                            <br />I leverage my experience as a
-                                            Full-Stack Web Developer to deliver
-                                            efficient and scalable web
-                                            solutions. <br /> <br />
-                                            My journey has deepened my
-                                            understanding of seamlessly
-                                            integrating form and function in web
-                                            development.I quickly adapt to
-                                            emerging technological trends,
-                                            ensuring I stay at the forefront.
-                                            <br />
-                                            <br /> Continuously honing my skills
-                                            guarantees that my projects are not
-                                            only innovative but also aligned
-                                            with industry shifts.
-                                            <br />
-                                            <br /> User-centered design defines
-                                            my approach. Detail-oriented, I
-                                            create immersive web experiences by
-                                            meticulously considering every pixel
-                                            and line of code. Prioritizing
-                                            aesthetic appeal and seamless
-                                            functionality, I ensure successful
-                                            outcomes in projects. Client
-                                            satisfaction drives me.
-                                            <br />
-                                            <br />
-                                            Effective communication, punctual
-                                            deliveries, and exceeding
-                                            expectations support my
-                                            collaborations. Carefully curating
-                                            web solutions, I accurately
-                                            translate clients' visions into
-                                            reality. As a Full-Stack Web
-                                            Developer, I bring a proven track
-                                            record of creating user-focused
-                                            dynamic websites.
+                                            {lang ? (
+                                                <p>
+                                                    <strong>
+                                                        Creating User-Centric
+                                                        Solutions
+                                                    </strong>
+                                                    <br />I leverage my
+                                                    experience as a Full-Stack
+                                                    Web Developer to deliver
+                                                    efficient and scalable web
+                                                    solutions. <br /> <br />
+                                                    My journey has deepened my
+                                                    understanding of seamlessly
+                                                    integrating form and
+                                                    function in web
+                                                    development.I quickly adapt
+                                                    to emerging technological
+                                                    trends, ensuring I stay at
+                                                    the forefront.
+                                                    <br />
+                                                    <br /> Continuously honing
+                                                    my skills guarantees that my
+                                                    projects are not only
+                                                    innovative but also aligned
+                                                    with industry shifts.
+                                                    <br />
+                                                    <br /> User-centered design
+                                                    defines my approach.
+                                                    Detail-oriented, I create
+                                                    immersive web experiences by
+                                                    meticulously considering
+                                                    every pixel and line of
+                                                    code. Prioritizing aesthetic
+                                                    appeal and seamless
+                                                    functionality, I ensure
+                                                    successful outcomes in
+                                                    projects. Client
+                                                    satisfaction drives me.
+                                                    <br />
+                                                    <br />
+                                                    Effective communication,
+                                                    punctual deliveries, and
+                                                    exceeding expectations
+                                                    support my collaborations.
+                                                    Carefully curating web
+                                                    solutions, I accurately
+                                                    translate clients' visions
+                                                    into reality. As a
+                                                    Full-Stack Web Developer, I
+                                                    bring a proven track record
+                                                    of creating user-focused
+                                                    dynamic websites.
+                                                </p>
+                                            ) : (
+                                                <p>
+                                                    <strong>
+                                                        Ofrezco soluciones
+                                                        centradas en el usuario!
+                                                    </strong>
+                                                    <br />I leverage my
+                                                    experience as a Full-Stack
+                                                    Web Developer to deliver
+                                                    efficient and scalable web
+                                                    solutions. <br /> <br />
+                                                    My journey has deepened my
+                                                    understanding of seamlessly
+                                                    integrating form and
+                                                    function in web
+                                                    development.I quickly adapt
+                                                    to emerging technological
+                                                    trends, ensuring I stay at
+                                                    the forefront.
+                                                    <br />
+                                                    <br /> Continuously honing
+                                                    my skills guarantees that my
+                                                    projects are not only
+                                                    innovative but also aligned
+                                                    with industry shifts.
+                                                    <br />
+                                                    <br /> User-centered design
+                                                    defines my approach.
+                                                    Detail-oriented, I create
+                                                    immersive web experiences by
+                                                    meticulously considering
+                                                    every pixel and line of
+                                                    code. Prioritizing aesthetic
+                                                    appeal and seamless
+                                                    functionality, I ensure
+                                                    successful outcomes in
+                                                    projects. Client
+                                                    satisfaction drives me.
+                                                    <br />
+                                                    <br />
+                                                    Effective communication,
+                                                    punctual deliveries, and
+                                                    exceeding expectations
+                                                    support my collaborations.
+                                                    Carefully curating web
+                                                    solutions, I accurately
+                                                    translate clients' visions
+                                                    into reality. As a
+                                                    Full-Stack Web Developer, I
+                                                    bring a proven track record
+                                                    of creating user-focused
+                                                    dynamic websites.
+                                                </p>
+                                            )}
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -334,7 +409,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                 </Grid>
             </Container>
             <footer className="footer">
-                <h4>Connect with me</h4>
+                <h4>{lang ? "Connect with me" : "Contáctame"}</h4>
                 <p>
                     <a
                         className="social"
@@ -398,7 +473,11 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                     </a>{" "}
                     <a
                         className="social"
-                        href="cven.pdf"
+                        href={
+                            lang
+                                ? "Diego_Pacheco_Full_Stack_cven.pdf"
+                                : "Diego_Pacheco_Full_Stack_cves.pdf"
+                        }
                         download="Diego-Pacheco-full-stack-resume"
                         target="blank">
                         <img
