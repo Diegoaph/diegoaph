@@ -30,7 +30,7 @@ enum pics {
     TS = "Typescript.jpg",
     VITE = "Vite.svg",
     REACT = "React.jpg",
-    RX = "rRedux.jpg",
+    RX = "Redux.jpg",
     CSS = "CSS.jpg",
     MUI = "Material-ui.jpg",
     RTK = "ReduxTK.jpg",
@@ -158,7 +158,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         marginTop: "5rem",
                                     }}>
                                     {lang
-                                        ? "Tool and technologies"
+                                        ? "Tools and technologies"
                                         : "Tecnologías y herramientas"}
                                 </Header2>
                                 <Header2
