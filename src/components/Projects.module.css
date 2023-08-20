@@ -22,8 +22,9 @@
 .image {
     margin-right: 20px;
     max-height: 30vh;
-    border-radius: 10px;
+    border-radius: 1.5em;
     padding: 1rem;
+    box-shadow: 0 0 1rem rgba(2, 55, 70, 0.67);
 }
 
 .details {
