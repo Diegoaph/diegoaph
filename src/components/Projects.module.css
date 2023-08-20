@@ -23,7 +23,8 @@
     margin-right: 20px;
     max-height: 30vh;
     border-radius: 1.5em;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     box-shadow: 0 0 1rem rgba(2, 55, 70, 0.67);
 }
 
