@@ -78,24 +78,26 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("top")}>
-                            Projects Gallery
+                            {lang ? "Projects Gallery" : "Galería de proyectos"}
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={() =>
                                 handleScrollToSection("tools-technologies")
                             }>
-                            Tools and technologies
+                            {lang
+                                ? "Tools and Technologies"
+                                : "Tecnologías que uso"}
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("education")}>
-                            My Education
+                            {lang ? "My Education" : "Mi Educación"}
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("about")}>
-                            About Me
+                            {lang ? "About Me" : "Sobre Mí"}
                         </Button>
                     </header>
                 </Stack>

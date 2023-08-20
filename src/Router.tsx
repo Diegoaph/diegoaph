@@ -27,7 +27,7 @@ const AppRouter: React.FC = () => {
                 />
                 <Route
                     path="/projects"
-                    element={<Projects />}
+                    element={<Projects lang={lang} />}
                 />
             </Route>
             <Route
