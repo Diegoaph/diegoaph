@@ -16,7 +16,7 @@
     overflow: hidden;
     flex-wrap: wrap;
     text-decoration: none;
-    max-width: 90%;
+    width: 40%;
 }
 
 .image {
@@ -45,6 +45,7 @@
 @media (max-width: 400px) {
     .a {
         flex-direction: column;
+        width: 100%;
         box-shadow: 0 0 0.5rem rgba(97, 218, 251, 0.67);
     }
 }
