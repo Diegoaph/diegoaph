@@ -73,22 +73,22 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 
 const Gallery = () => {
     enum pics {
-        API = "api.jpg",
-        CSS = "css.jpg",
-        JS = "javascript.jpg",
-        TS = "typescript.jpg",
-        VITE = "vite.svg",
-        MUI = "material-ui.jpg",
-        REACT = "react.jpg",
-        RX = "redux.jpg",
-        RTK = "reduxTK.jpg",
-        FB = "firebase.jpg",
-        NODE = "node.jpg",
-        EX = "express.jpg",
-        PG = "postgresql.jpg",
-        MDB = "mongodb.jpg",
-        GIT = "git.jpg",
-        GH = "github.jpg",
+        API = "API.jpg",
+        CSS = "CSS.jpg",
+        JS = "Javascript.jpg",
+        TS = "Typescript.jpg",
+        VITE = "Vite.svg",
+        MUI = "Material-ui.jpg",
+        REACT = "React.jpg",
+        RX = "Redux.jpg",
+        RTK = "ReduxTK.jpg",
+        FB = "Firebase.jpg",
+        NODE = "Node.jpg",
+        EX = "Express.jpg",
+        PG = "Postgresql.jpg",
+        MDB = "Mongodb.jpg",
+        GIT = "Git.jpg",
+        GH = "Github.jpg",
     }
     const items = [
         {

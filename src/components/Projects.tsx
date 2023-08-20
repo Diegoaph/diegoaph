@@ -47,7 +47,7 @@ const itemData: Item[] = [
         img: "https://media.licdn.com/dms/image/D4E22AQGowmQwv0dZOw/feedshare-shrink_1280/0/1690911793922?e=1694044800&v=beta&t=DnwiNGiZeVWcPHWUz1VjdEuxct3OT3WdCVQeGyTYKnU",
         title: "GamingHub",
         description: "🅆🄾🅁🄺🄸🄽🄶 🄾🄽 🄸🅃",
-        descripcion: "🄴🅂🅃🄰🄼🄾🅂 🅃🅁🄰🄱🄰🄹🄰🄽🄳🄾",
+        descripcion: "🅃🅁🄰🄱🄰🄹🄰🄽🄳🄾",
         URL: "https://devdiego-videogames.vercel.app/",
     },
     {
