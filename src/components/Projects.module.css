@@ -16,13 +16,13 @@
     overflow: hidden;
     flex-wrap: wrap;
     text-decoration: none;
-    width: 48%;
+    width: 46%;
 }
 
 .image {
     margin-right: 20px;
     max-height: 30vh;
-    border-radius: 1rem;
+    border-radius: 10px;
     padding: 1rem;
 }
 
