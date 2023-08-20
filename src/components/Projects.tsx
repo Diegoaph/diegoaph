@@ -40,7 +40,7 @@ const itemData: Item[] = [
         img: "https://media.licdn.com/dms/image/D4E22AQGB_ikLBJWfxA/feedshare-shrink_1280/0/1692148763769?e=1695254400&v=beta&t=Bu_AkVozFAXYP_cDPH3A_wfG6hNDmAZPxvSkUZEYwSU",
         title: "Sunset Sands Hotel",
         description: "Booking engine for hotels",
-        descripcion: "Motor de reserva de habitaciones para hoteles",
+        descripcion: "Motor de reservas para hoteles",
         URL: "https://sunsetsandsdev.vercel.app/",
     },
     {
