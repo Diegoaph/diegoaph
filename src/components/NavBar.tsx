@@ -27,12 +27,14 @@ const HoverableH2 = styled("h2")({
         fontSize: "1rem",
     },
 });
-
-export const NavBar: React.FC<{}> = () => {
+interface NavBarProps {
+    lang: boolean;
+    setLang: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
     const [open, setOpen] = useState(false);
-    const [Lang, setLang] = useState(true);
 
     const handleOpen = () => {
         setOpen(true);
@@ -41,13 +43,13 @@ export const NavBar: React.FC<{}> = () => {
     const handleClose = () => {
         setOpen(false);
     };
-    const handleLang = () => {
-        setLang(!Lang);
+    const handlelang = () => {
+        setLang(!lang);
     };
 
     const modalContent = (
         <div>
-            <h4>{Lang ? "Connect with me" : "Contáctate conmigo"}</h4>
+            <h4>{lang ? "Connect with me" : "Contáctate conmigo"}</h4>
             <p>
                 <a
                     className="social"
@@ -112,7 +114,7 @@ export const NavBar: React.FC<{}> = () => {
                 <a
                     className="social"
                     href={
-                        Lang
+                        lang
                             ? "Diego_Pacheco_Full_Stack_cven.pdf"
                             : "Diego_Pacheco_Full_Stack_cves.pdf"
                     }
@@ -169,14 +171,14 @@ export const NavBar: React.FC<{}> = () => {
                                     spacing={0.3}>
                                     <a
                                         href={
-                                            Lang
+                                            lang
                                                 ? "Diego_Pacheco_Full_Stack_cven.pdf"
                                                 : "Diego_Pacheco_Full_Stack_cves.pdf"
                                         }
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
-                                            {Lang ? "CV⇣" : "CV⇣"}
+                                            {lang ? "CV⇣" : "CV⇣"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
@@ -200,10 +202,10 @@ export const NavBar: React.FC<{}> = () => {
                                                 },
                                             }}>
                                             {isProjectsPage
-                                                ? Lang
+                                                ? lang
                                                     ? "Home"
                                                     : "Inicio"
-                                                : Lang
+                                                : lang
                                                 ? "Projects"
                                                 : "Proyectos"}
                                         </Button>
@@ -211,7 +213,7 @@ export const NavBar: React.FC<{}> = () => {
                                     <Button
                                         variant="contained"
                                         onClick={handleOpen}>
-                                        {Lang ? "Contact" : "Contacto"}
+                                        {lang ? "Contact" : "Contacto"}
                                     </Button>
                                     <Modal
                                         open={open}
@@ -245,7 +247,7 @@ export const NavBar: React.FC<{}> = () => {
                                                 boxShadow: themePalette.LIGHT,
                                             },
                                         }}
-                                        onClick={handleLang}>
+                                        onClick={handlelang}>
                                         <TranslateIcon />
                                     </Button>
                                 </Stack>

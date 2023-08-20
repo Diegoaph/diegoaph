@@ -2,10 +2,18 @@ import React from "react";
 import { NavBar } from "./NavBar";
 import { Outlet } from "react-router-dom";
 
-const RouterLayout: React.FC<{}> = () => {
+interface RouterLayoutProps {
+    lang: boolean;
+    setLang: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const RouterLayout: React.FC<RouterLayoutProps> = ({ lang, setLang }) => {
     return (
         <>
-            <NavBar />
+            <NavBar
+                lang={lang}
+                setLang={setLang}
+            />
             <Outlet />
         </>
     );

@@ -53,7 +53,7 @@ enum certs {
     BASICS = "https://media.licdn.com/dms/image/D4E22AQEbCpJwrk6Srw/feedshare-shrink_2048_1536/0/1690167317933?e=1692835200&v=beta&t=6F7loPgyspPinazOFuA8jV7ynZK-ge4eVWDHUr8WmA4",
     LINUX = "https://media.licdn.com/dms/image/D4E22AQH7JaJOaHpoqQ/feedshare-shrink_2048_1536/0/1690168872290?e=1692835200&v=beta&t=ilVz9VzhKmT8lWIbWTigKT7bWZfDdK1kZqUDVJomCfU",
 }
-const Landing: React.FC<{}> = () => {
+const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
     const handleScrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -238,7 +238,9 @@ const Landing: React.FC<{}> = () => {
                                         color: themePalette.LIGHT,
                                         marginTop: "5rem",
                                     }}>
-                                    I'm Diego!
+                                    {lang
+                                        ? "I'm Diego!"
+                                        : "Hola! yo soy Diego!"}
                                 </Typography>
                                 <Grid
                                     container

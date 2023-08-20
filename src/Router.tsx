@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 import RouterLayout from "./components/RouterLayout";
 
-export const AppRouter: React.FC<{}> = () => {
+interface LangProp {
+    lang: boolean;
+}
+
+const AppRouter: React.FC = () => {
+    const [lang, setLang] = useState<boolean>(true);
+
     return (
         <Routes>
             <Route
                 path="/"
-                element={<RouterLayout />}>
+                element={
+                    <RouterLayout
+                        lang={lang}
+                        setLang={setLang}
+                    />
+                }>
                 <Route
                     path="/"
-                    element={<Landing />}
+                    element={<Landing lang={lang} />}
                 />
                 <Route
                     path="/projects"
@@ -26,3 +37,5 @@ export const AppRouter: React.FC<{}> = () => {
         </Routes>
     );
 };
+
+export default AppRouter;
