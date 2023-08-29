@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: center;
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 .about-container {
@@ -84,7 +84,7 @@
 }
 
 #top {
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 #tools-technologies {
     margin-bottom: 0;
@@ -101,10 +101,10 @@
 @media (max-width: 860px) {
     .aside {
         margin-top: 2.3rem;
-        max-width: 100vw;
+        width: 100%;
     }
     #top {
-        margin-bottom: 3rem;
+        margin-bottom: 3.3rem;
     }
     #tools-technologies {
         margin-bottom: 0;
@@ -126,7 +126,7 @@
         .aside {
             margin-top: 2rem;
 
-            max-width: 100vw;
+            width: 100%;
         }
 
         #top {
