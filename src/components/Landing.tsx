@@ -76,7 +76,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                 <Stack
                     direction="row"
                     spacing={1}>
-                    <header className="aside">
+                    <section className="aside">
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("top")}>
@@ -101,7 +101,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                             onClick={() => handleScrollToSection("about")}>
                             {lang ? "About Me" : "Sobre Mí"}
                         </Button>
-                    </header>
+                    </section>
                 </Stack>
             </Grid>{" "}
             <Container>
