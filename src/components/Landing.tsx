@@ -46,7 +46,7 @@ enum pics {
 enum certs {
     FULLSTACK = "https://media.licdn.com/dms/image/D4E22AQH2JciUNRY6ZA/feedshare-shrink_2048_1536/0/1689991632684?e=1692835200&v=beta&t=HnFAY1MgshGUmZQkraAm_AirDBJ9GrHzBq8xzgIDLWI",
     FRONTEND = "https://media.licdn.com/dms/image/D4E22AQE_Uew3OUc1yw/feedshare-shrink_2048_1536/0/1690167083293?e=1692835200&v=beta&t=MceJwN6bHuYz82khdK50mv1qevhJtsNzGEbDBe7D1b4",
-    ENGLISH = "https://media.licdn.com/dms/image/D4E22AQHuodEmQK89HQ/feedshare-shrink_1280/0/1690173496222?e=1692835200&v=beta&t=s0-teSZyIrmaPSOC9PRUbxnqXtJgIo3qmLlaueI3gLs",
+    ENGLISH = "https://media.licdn.com/dms/image/D4E22AQHuodEmQK89HQ/feedshare-shrink_1280/0/1690173496222?e=1696464000&v=beta&t=1T3F9k2yCjuza5g4a2UleVTej77tW8_p61GHHSunsOY",
     TERMINAL = "https://media.licdn.com/dms/image/D4E22AQEpwEtWqZOPuA/feedshare-shrink_2048_1536/0/1690167888626?e=1692835200&v=beta&t=Qvql5GIce2OFoGlB513sUYTbnS_mDhKZloW2Vk1Q5tA",
     GITHUB = "https://media.licdn.com/dms/image/D4E22AQEzRwS3BvWbQw/feedshare-shrink_2048_1536/0/1690168561993?e=1692835200&v=beta&t=y28NMEh5sbOaV0bJOprk2XbrmmRLTBhmSHGmK0qN2mI",
     ALGOS = "https://media.licdn.com/dms/image/D4E22AQFHpFdcUSdWQw/feedshare-shrink_2048_1536/0/1690167596625?e=1692835200&v=beta&t=d84W55OO58IaYYy5lkBb8m98yyrziRmlFP0-Kn_Qyek",
@@ -355,7 +355,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                                         centradas en el usuario!
                                                     </strong>
                                                     <br />
-                                                    IAprovecho mi experiencia
+                                                    Aprovecho mi experiencia
                                                     como Desarrollador Web Full
                                                     Stack para entregar
                                                     soluciones web eficientes y
