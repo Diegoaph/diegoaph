@@ -70,7 +70,9 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                 display: "flex",
                 flexDirection: "column",
             }}>
-            <Grid container>
+            <Grid
+                container
+                className="ppal">
                 <Stack
                     direction="row"
                     spacing={1}>
