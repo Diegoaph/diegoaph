@@ -133,9 +133,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
     );
 
     return (
-        <Box
-            width="100vw"
-            sx={{ flexGrow: 1 }}>
+        <Box width="100">
             <AppBar position="fixed">
                 <Toolbar>
                     <Container maxWidth="xl">
