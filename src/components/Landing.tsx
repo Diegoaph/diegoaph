@@ -244,8 +244,8 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                             <Grid
                                 container
                                 direction="column">
-                                <Typography
-                                    variant="h4"
+                                <Header2
+                                    className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
                                         marginTop: "5rem",
@@ -253,7 +253,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                     {lang
                                         ? "I'm Diego!"
                                         : "Hola! yo soy Diego!"}
-                                </Typography>
+                                </Header2>{" "}
                                 <Grid
                                     container
                                     direction="row"
