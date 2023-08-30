@@ -80,7 +80,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("top")}>
-                            {lang ? "Projects Gallery" : "Galería"}
+                            {lang ? "Projects Gallery" : "Mi Galería"}
                         </Button>
                         <Button
                             variant="outlined"
