@@ -120,6 +120,9 @@
         margin-bottom: 0;
         padding: 2rem;
     }
+    .ppal {
+        width: 100%;
+    }
 
     @media (max-width: 400px) {
         .description-container {
@@ -130,7 +133,9 @@
 
             width: 100% !important;
         }
-
+        .ppal {
+            width: 100%;
+        }
         #top {
             margin-bottom: 5rem;
         }
