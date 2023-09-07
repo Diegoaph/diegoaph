@@ -182,7 +182,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQGhsiZTcE5zGg/feedshare-shrink_1280/0/1690911793267?e=1694044800&v=beta&t=_2qtLRr6_voX6M_ZIBtNnNXvlHzbOCx6aPJocXZ5G4A",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQFOY2L0I-lzSQ/profile-treasury-image-shrink_800_800/0/1693445360878?e=1694721600&v=beta&t=2UBxqmpBFy22p9DV5kL5Pj-Eyln6zU3QtYXjk_woHNI",
             PROJECT: "Videogames catalog",
             DETAIL: "Landing Page",
             TECHNOLOGIES: [
@@ -197,8 +197,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQGTsN-9hm8CnA/feedshare-shrink_1280/0/1690911793482?e=1694044800&v=beta&t=PLOU6y11buq2IyoaE9jOfM4VCMq3wO97qUUE2k-El9o",
-            PROJECT: "Videogames catalog",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQHlOefbddni8A/profile-treasury-image-shrink_800_800/0/1693445293713?e=1694721600&v=beta&t=wQB7Xd_Lx-p7-lr_EUrNyuy3TxNeyIqvqTwv6WoJAgA",
             DETAIL: "Home, filters",
             TECHNOLOGIES: [
                 pics.JS,
@@ -212,8 +211,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQHkAR-QsdvMVQ/feedshare-shrink_1280/0/1690911793909?e=1694044800&v=beta&t=DkE6M_orZYP263b-BRUWf0TsquYQ83l9mMahVGpp0do",
-            PROJECT: "Videogames catalog",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQEJx9MN-xOw8w/profile-treasury-image-shrink_800_800/0/1693445227292?e=1694721600&v=beta&t=xwOg9ntkeaFj_mXY9-q5KGay3hqdhI5bnV7IkzCyIos",
             DETAIL: "Detail",
             TECHNOLOGIES: [
                 pics.JS,
@@ -227,7 +225,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQGowmQwv0dZOw/feedshare-shrink_1280/0/1690911793922?e=1694044800&v=beta&t=DnwiNGiZeVWcPHWUz1VjdEuxct3OT3WdCVQeGyTYKnU",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQGeNdjSK1-DOg/profile-treasury-image-shrink_800_800/0/1693445258574?e=1694721600&v=beta&t=DY42couNj2aVjihsAyVYaJmsOmnZvW0jywFDM8gPwAU",
             PROJECT: "Videogames catalog",
             DETAIL: "Home, Name searching",
             TECHNOLOGIES: [
@@ -243,7 +241,7 @@ const Gallery = () => {
         },
 
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQEQZl1XQQXfmA/feedshare-shrink_1280/0/1690911793910?e=1694044800&v=beta&t=StpDteUQYaDSJgiLARX0C0sFcAGTexx1mQD9E5MEEeE",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQGCPo6mz0TotQ/profile-treasury-image-shrink_800_800/0/1693445177066?e=1694725200&v=beta&t=NRhn3fRpsDXrnZiPfMGyPxwCAqSXXr2u30M-9ltp_lQ",
             PROJECT: "Videogames catalog",
             DETAIL: "Create Form",
             TECHNOLOGIES: [
@@ -258,7 +256,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQFO6O8kKc4ZoQ/feedshare-shrink_800/0/1690605400142?e=1693440000&v=beta&t=4c0Z3S5sOLwhXAWwqzS7dA_Q-uX72gzBghRsAoZY1bo",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQFl9ocDMjQG7Q/profile-treasury-image-shrink_800_800/0/1693444279155?e=1694725200&v=beta&t=V-86LYVy578pdqClDmVQLfpZqTr6KcTMOernNUAh_48",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "About section",
             TECHNOLOGIES: [
@@ -271,7 +269,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQHsUzjAoUEYng/feedshare-shrink_800/0/1690605378926?e=1693440000&v=beta&t=PXLgG2iEG4mLAePX6fyj4ETWe_-SDWKJKKAXZp9MiHk",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQG62QrOBoi0rg/profile-treasury-image-shrink_800_800/0/1693444508593?e=1694725200&v=beta&t=hzDKnYWXxj6e02qMKq79L8fNWtCkL88Kqpcm3KY-yRs",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "character list, with nav bar",
             TECHNOLOGIES: [
@@ -284,7 +282,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQHb81tY7nb7Bg/feedshare-shrink_800/0/1690605400554?e=1693440000&v=beta&t=wqUlav1bX_cy86vM4jJdBZ5Nk_768E_Tj5kIAa9VH2A",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQE_uiXAC3lrfA/profile-treasury-image-shrink_800_800/0/1693444577059?e=1694725200&v=beta&t=Y0RJuexsUv7pMP20SJiLuoOHirLH7kYWD2a8FAgAxZM",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "Login Page, showing validations and feedback message",
             TECHNOLOGIES: [
@@ -297,8 +295,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQE78Fa-7yoZeg/feedshare-shrink_800/0/1690605398283?e=1693440000&v=beta&t=MypCM8y4JtWkkLTn3SAeFV4HP6yBlZWcfYb2takA98k",
-            PROJECT: "Rick & Morty Character Catalog",
+            URL: "https://media.licdn.com/dms/image/D4E2DAQHewkw67LFmKQ/profile-treasury-image-shrink_800_800/0/1693444328928?e=1694725200&v=beta&t=FzbXevzZVXpXq7MKLKNvnIhzBV0VDfjtUZgucKSTkGM",
             DETAIL: "FAVs page",
             TECHNOLOGIES: [
                 pics.JS,

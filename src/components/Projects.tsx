@@ -44,14 +44,14 @@ const itemData: Item[] = [
         URL: "https://sunsetsandsdev.vercel.app/",
     },
     {
-        img: "https://media.licdn.com/dms/image/D4E22AQGowmQwv0dZOw/feedshare-shrink_1280/0/1690911793922?e=1694044800&v=beta&t=DnwiNGiZeVWcPHWUz1VjdEuxct3OT3WdCVQeGyTYKnU",
+        img: "https://media.licdn.com/dms/image/D4E2DAQFOY2L0I-lzSQ/profile-treasury-image-shrink_800_800/0/1693445360878?e=1694721600&v=beta&t=2UBxqmpBFy22p9DV5kL5Pj-Eyln6zU3QtYXjk_woHNI",
         title: "GamingHub",
         description: "🅆🄾🅁🄺🄸🄽🄶 🄾🄽 🄸🅃",
         descripcion: "🅃🅁🄰🄱🄰🄹🄰🄽🄳🄾",
         URL: "https://devdiego-videogames.vercel.app/",
     },
     {
-        img: "https://media.licdn.com/dms/image/D4E22AQF-VPcR1z07wg/feedshare-shrink_800/0/1690605400062?e=1693440000&v=beta&t=PEHS-Re3bgHA7Tq5fuTP8FDTNmd_gUaljaVkyyJycjA",
+        img: "https://media.licdn.com/dms/image/D4E2DAQHewkw67LFmKQ/profile-treasury-image-shrink_800_800/0/1693444328928?e=1694725200&v=beta&t=FzbXevzZVXpXq7MKLKNvnIhzBV0VDfjtUZgucKSTkGM",
         descripcion: "Catálogo de personajes",
         title: "Rick & Morty",
         description: "Characters catalog",
