@@ -198,6 +198,7 @@ const Gallery = () => {
         },
         {
             URL: "https://media.licdn.com/dms/image/D4E2DAQHlOefbddni8A/profile-treasury-image-shrink_800_800/0/1693445293713?e=1694721600&v=beta&t=wQB7Xd_Lx-p7-lr_EUrNyuy3TxNeyIqvqTwv6WoJAgA",
+            PROJECT: "Videogames catalog",
             DETAIL: "Home, filters",
             TECHNOLOGIES: [
                 pics.JS,
@@ -212,6 +213,7 @@ const Gallery = () => {
         },
         {
             URL: "https://media.licdn.com/dms/image/D4E2DAQEJx9MN-xOw8w/profile-treasury-image-shrink_800_800/0/1693445227292?e=1694721600&v=beta&t=xwOg9ntkeaFj_mXY9-q5KGay3hqdhI5bnV7IkzCyIos",
+            PROJECT: "Videogames catalog",
             DETAIL: "Detail",
             TECHNOLOGIES: [
                 pics.JS,
@@ -296,6 +298,7 @@ const Gallery = () => {
         },
         {
             URL: "https://media.licdn.com/dms/image/D4E2DAQHewkw67LFmKQ/profile-treasury-image-shrink_800_800/0/1693444328928?e=1694725200&v=beta&t=FzbXevzZVXpXq7MKLKNvnIhzBV0VDfjtUZgucKSTkGM",
+            PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "FAVs page",
             TECHNOLOGIES: [
                 pics.JS,
