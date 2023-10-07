@@ -92,7 +92,7 @@ const Gallery = () => {
     }
     const items = [
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQGB_ikLBJWfxA/feedshare-shrink_1280/0/1692148763769?e=1695254400&v=beta&t=Bu_AkVozFAXYP_cDPH3A_wfG6hNDmAZPxvSkUZEYwSU",
+            URL: "https://imgur.com/kxOSAOo",
             PROJECT: "Bookings engine",
             DETAIL: "Home Page",
             TECHNOLOGIES: [
@@ -110,7 +110,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQFwOlM1X1Labg/feedshare-shrink_1280/0/1692148763442?e=1695254400&v=beta&t=WXfMDRRXXfjjh2BkoKvR4cjBAUwyR45QEWPs0qVEG1w",
+            URL: "https://imgur.com/S8pTbLj",
             PROJECT: "Bookings engine",
             DETAIL: "Detail",
             TECHNOLOGIES: [
@@ -128,7 +128,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQHspoUZ2MNQIQ/feedshare-shrink_1280/0/1692148763899?e=1695254400&v=beta&t=qjfAtpVZ9q6w-S-ESbI_tu5WMuqPJczaeZCINzao7v4",
+            URL: "https://imgur.com/ngnSu14",
             PROJECT: "Bookings engine",
             DETAIL: "Notifications",
             TECHNOLOGIES: [
@@ -146,7 +146,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQHElreQKGcgzA/feedshare-shrink_1280/0/1692148763061?e=1695254400&v=beta&t=cYADcuytDVElVWDLXZ-ycJMioo66jhGrItw1Gsit_vc",
+            URL: "https://imgur.com/6mrwlCJ",
             PROJECT: "Bookings engine",
             DETAIL: "Dashboards",
             TECHNOLOGIES: [
@@ -164,7 +164,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQGUG42RO02Egw/feedshare-shrink_1280/0/1692148763189?e=1695254400&v=beta&t=FLOVrb8siJzdrToXunTrjyaVCYnOAhSodwPPDX6hWj8",
+            URL: "https://imgur.com/U5yYAfp",
             PROJECT: "Bookings engine",
             DETAIL: "Login",
             TECHNOLOGIES: [
@@ -182,7 +182,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQFOY2L0I-lzSQ/profile-treasury-image-shrink_800_800/0/1693445360878?e=1694721600&v=beta&t=2UBxqmpBFy22p9DV5kL5Pj-Eyln6zU3QtYXjk_woHNI",
+            URL: "https://imgur.com/p4gfyf3",
             PROJECT: "Videogames catalog",
             DETAIL: "Landing Page",
             TECHNOLOGIES: [
@@ -197,7 +197,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQHlOefbddni8A/profile-treasury-image-shrink_800_800/0/1693445293713?e=1694721600&v=beta&t=wQB7Xd_Lx-p7-lr_EUrNyuy3TxNeyIqvqTwv6WoJAgA",
+            URL: "https://imgur.com/kqwut4D",
             PROJECT: "Videogames catalog",
             DETAIL: "Home, filters",
             TECHNOLOGIES: [
@@ -212,7 +212,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQEJx9MN-xOw8w/profile-treasury-image-shrink_800_800/0/1693445227292?e=1694721600&v=beta&t=xwOg9ntkeaFj_mXY9-q5KGay3hqdhI5bnV7IkzCyIos",
+            URL: "https://imgur.com/3xhfkpN",
             PROJECT: "Videogames catalog",
             DETAIL: "Detail",
             TECHNOLOGIES: [
@@ -227,7 +227,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQGeNdjSK1-DOg/profile-treasury-image-shrink_800_800/0/1693445258574?e=1694721600&v=beta&t=DY42couNj2aVjihsAyVYaJmsOmnZvW0jywFDM8gPwAU",
+            URL: "https://imgur.com/ZYzJCMH",
             PROJECT: "Videogames catalog",
             DETAIL: "Home, Name searching",
             TECHNOLOGIES: [
@@ -243,7 +243,7 @@ const Gallery = () => {
         },
 
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQGCPo6mz0TotQ/profile-treasury-image-shrink_800_800/0/1693445177066?e=1694725200&v=beta&t=NRhn3fRpsDXrnZiPfMGyPxwCAqSXXr2u30M-9ltp_lQ",
+            URL: "https://imgur.com/jfwbITr",
             PROJECT: "Videogames catalog",
             DETAIL: "Create Form",
             TECHNOLOGIES: [
@@ -258,7 +258,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQFl9ocDMjQG7Q/profile-treasury-image-shrink_800_800/0/1693444279155?e=1694725200&v=beta&t=V-86LYVy578pdqClDmVQLfpZqTr6KcTMOernNUAh_48",
+            URL: "https://imgur.com/Qf8bAyH",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "About section",
             TECHNOLOGIES: [
@@ -271,7 +271,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQG62QrOBoi0rg/profile-treasury-image-shrink_800_800/0/1693444508593?e=1694725200&v=beta&t=hzDKnYWXxj6e02qMKq79L8fNWtCkL88Kqpcm3KY-yRs",
+            URL: "https://imgur.com/xfAzQpg",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "character list, with nav bar",
             TECHNOLOGIES: [
@@ -284,7 +284,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQE_uiXAC3lrfA/profile-treasury-image-shrink_800_800/0/1693444577059?e=1694725200&v=beta&t=Y0RJuexsUv7pMP20SJiLuoOHirLH7kYWD2a8FAgAxZM",
+            URL: "https://imgur.com/0LEPnQO",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "Login Page, showing validations and feedback message",
             TECHNOLOGIES: [
@@ -297,7 +297,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E2DAQHewkw67LFmKQ/profile-treasury-image-shrink_800_800/0/1693444328928?e=1694725200&v=beta&t=FzbXevzZVXpXq7MKLKNvnIhzBV0VDfjtUZgucKSTkGM",
+            URL: "https://imgur.com/9s8lbFv",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "FAVs page",
             TECHNOLOGIES: [
@@ -310,25 +310,25 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQFUihJPKxfYEg/feedshare-shrink_1280/0/1692412312173?e=1695254400&v=beta&t=8Z9LhPkW27uy1gfIKHgTkY9dzutjyQk7Y8fm9O44FC0",
+            URL: "https://imgur.com/2gTa9Jt",
             PROJECT: "Professional Portfolio",
             DETAIL: "About Diego",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQHfrA8JZd988A/feedshare-shrink_1280/0/1692412317888?e=1695254400&v=beta&t=9ZrNtX5nIjCR4w7wIyGM90ziWz6WjIO33M-3yxLyq_E",
+            URL: "https://imgur.com/FFuBDZt",
             PROJECT: "Professional Portfolio",
             DETAIL: "Projects gallery",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQFI79zBeBoBbA/feedshare-shrink_1280/0/1692412317938?e=1695254400&v=beta&t=FYW_JGmo6TschGvz15WyMJYegy_lEkoxsnL0sxz_3J8",
+            URL: "https://imgur.com/dK1NZk6",
             PROJECT: "Professional Portfolio",
             DETAIL: "Projects List",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
         {
-            URL: "https://media.licdn.com/dms/image/D4E22AQE-RSsoyrYx1w/feedshare-shrink_1280/0/1692412316659?e=1695254400&v=beta&t=Kc7mikIwEOqUFjcsX8fx4UAtkNOQSHlf1kalwFShABU",
+            URL: "https://imgur.com/EjjWplR",
             PROJECT: "Professional Portfolio",
             DETAIL: "Screens",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
