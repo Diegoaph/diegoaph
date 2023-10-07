@@ -316,7 +316,7 @@ const Gallery = () => {
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
         {
-            URL: "https://imgur.com/FFuBDZt",
+            URL: "https://i.imgur.com/gh9B5dh.png",
             PROJECT: "Professional Portfolio",
             DETAIL: "Projects gallery",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
