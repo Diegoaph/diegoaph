@@ -92,7 +92,7 @@ const Gallery = () => {
     }
     const items = [
         {
-            URL: "https://imgur.com/kxOSAOo",
+            URL: "https://i.imgur.com/gh9B5dh.png",
             PROJECT: "Bookings engine",
             DETAIL: "Home Page",
             TECHNOLOGIES: [
@@ -110,7 +110,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/S8pTbLj",
+            URL: "https://i.imgur.com/S8pTbLj.png",
             PROJECT: "Bookings engine",
             DETAIL: "Detail",
             TECHNOLOGIES: [
@@ -128,7 +128,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/ngnSu14",
+            URL: "https://i.imgur.com/ngnSu14.png",
             PROJECT: "Bookings engine",
             DETAIL: "Notifications",
             TECHNOLOGIES: [
@@ -146,7 +146,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/6mrwlCJ",
+            URL: "https://i.imgur.com/6mrwlCJ.png",
             PROJECT: "Bookings engine",
             DETAIL: "Dashboards",
             TECHNOLOGIES: [
@@ -164,7 +164,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/U5yYAfp",
+            URL: "https://i.imgur.com/U5yYAfp.png",
             PROJECT: "Bookings engine",
             DETAIL: "Login",
             TECHNOLOGIES: [
@@ -182,7 +182,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/p4gfyf3",
+            URL: "https://i.imgur.com/p4gfyf3.jpg",
             PROJECT: "Videogames catalog",
             DETAIL: "Landing Page",
             TECHNOLOGIES: [
@@ -197,7 +197,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/kqwut4D",
+            URL: "https://i.imgur.com/57yUJdJ.jpg",
             PROJECT: "Videogames catalog",
             DETAIL: "Home, filters",
             TECHNOLOGIES: [
@@ -212,7 +212,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/3xhfkpN",
+            URL: "https://i.imgur.com/3xhfkpN.jpg",
             PROJECT: "Videogames catalog",
             DETAIL: "Detail",
             TECHNOLOGIES: [
@@ -227,7 +227,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/ZYzJCMH",
+            URL: "https://i.imgur.com/ZYzJCMH.jpg",
             PROJECT: "Videogames catalog",
             DETAIL: "Home, Name searching",
             TECHNOLOGIES: [
@@ -243,7 +243,7 @@ const Gallery = () => {
         },
 
         {
-            URL: "https://imgur.com/jfwbITr",
+            URL: "https://i.imgur.com/jfwbITr.jpg",
             PROJECT: "Videogames catalog",
             DETAIL: "Create Form",
             TECHNOLOGIES: [
@@ -258,7 +258,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/Qf8bAyH",
+            URL: "https://i.imgur.com/Qf8bAyH.jpg",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "About section",
             TECHNOLOGIES: [
@@ -271,7 +271,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/xfAzQpg",
+            URL: "https://i.imgur.com/xfAzQpg.jpg",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "character list, with nav bar",
             TECHNOLOGIES: [
@@ -284,7 +284,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/0LEPnQO",
+            URL: "https://i.imgur.com/0LEPnQO.jpg",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "Login Page, showing validations and feedback message",
             TECHNOLOGIES: [
@@ -297,7 +297,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/9s8lbFv",
+            URL: "https://i.imgur.com/9s8lbFv.jpg",
             PROJECT: "Rick & Morty Character Catalog",
             DETAIL: "FAVs page",
             TECHNOLOGIES: [
@@ -310,7 +310,7 @@ const Gallery = () => {
             ],
         },
         {
-            URL: "https://imgur.com/2gTa9Jt",
+            URL: "https://i.imgur.com/m2LA70x.png",
             PROJECT: "Professional Portfolio",
             DETAIL: "About Diego",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
@@ -322,13 +322,13 @@ const Gallery = () => {
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
         {
-            URL: "https://imgur.com/dK1NZk6",
+            URL: "https://i.imgur.com/SHdAHVl.png",
             PROJECT: "Professional Portfolio",
             DETAIL: "Projects List",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
         },
         {
-            URL: "https://imgur.com/EjjWplR",
+            URL: "https://i.imgur.com/PR8qUAK.png",
             PROJECT: "Professional Portfolio",
             DETAIL: "Screens",
             TECHNOLOGIES: [pics.TS, pics.REACT, pics.CSS, pics.MUI, pics.VITE],
