@@ -37,28 +37,28 @@ const Projects: React.FC<{ lang: boolean }> = ({ lang }) => {
 };
 const itemData: Item[] = [
     {
-        img: "https://media.licdn.com/dms/image/D4E22AQGB_ikLBJWfxA/feedshare-shrink_1280/0/1692148763769?e=1695254400&v=beta&t=Bu_AkVozFAXYP_cDPH3A_wfG6hNDmAZPxvSkUZEYwSU",
+        img: "https://i.imgur.com/kxOSAOo.png",
         title: "Sunset Sands Hotel",
         description: "Booking engine for hotels",
         descripcion: "Motor de reservas para hoteles",
         URL: "https://sunsetsandsdev.vercel.app/",
     },
     {
-        img: "https://media.licdn.com/dms/image/D4E2DAQFOY2L0I-lzSQ/profile-treasury-image-shrink_800_800/0/1693445360878?e=1694721600&v=beta&t=2UBxqmpBFy22p9DV5kL5Pj-Eyln6zU3QtYXjk_woHNI",
+        img: "https://i.imgur.com/57yUJdJ.jpg",
         title: "GamingHub",
         description: "🅆🄾🅁🄺🄸🄽🄶 🄾🄽 🄸🅃",
         descripcion: "🅃🅁🄰🄱🄰🄹🄰🄽🄳🄾",
         URL: "https://devdiego-videogames.vercel.app/",
     },
     {
-        img: "https://media.licdn.com/dms/image/D4E2DAQHewkw67LFmKQ/profile-treasury-image-shrink_800_800/0/1693444328928?e=1694725200&v=beta&t=FzbXevzZVXpXq7MKLKNvnIhzBV0VDfjtUZgucKSTkGM",
+        img: "https://i.imgur.com/9s8lbFv.jpg",
         descripcion: "Catálogo de personajes",
         title: "Rick & Morty",
         description: "Characters catalog",
         URL: "https://devdiego-rickymorty.vercel.app/",
     },
     {
-        img: "https://media.licdn.com/dms/image/D4E22AQE-RSsoyrYx1w/feedshare-shrink_1280/0/1692412316659?e=1695254400&v=beta&t=Kc7mikIwEOqUFjcsX8fx4UAtkNOQSHlf1kalwFShABU",
+        img: "https://i.imgur.com/PR8qUAK.png",
         title: "Portfolio",
         descripcion: "Éste, mi portafolio",
         description: "This, my own portfolio",

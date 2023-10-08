@@ -46,7 +46,7 @@ enum pics {
 enum certs {
     FULLSTACK = "https://i.imgur.com/xjBvdRO.jpg",
     FRONTEND = "https://i.imgur.com/2YUTvEf.jpg",
-    ENGLISH = "https://i.imgur.com/JbW5oi3.jpg",
+    ENGLISH = "https://i.imgur.com/C80O1os.png",
     TERMINAL = "https://i.imgur.com/7meTrhL.jpg",
     GITHUB = "https://i.imgur.com/UbiueKD.jpg",
     ALGOS = "https://i.imgur.com/u7SepwY.jpg",
@@ -144,7 +144,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                 className="divider"
                                 id="tools-technologies"
                                 style={{
-                                    marginBottom: "3rem",
+                                    marginBottom: "1rem",
                                     marginTop: "2rem",
                                 }}
                             />
@@ -237,12 +237,11 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                                     width="300"
                                                     style={{
                                                         borderRadius: "15px",
-                                                        margin: "3px",
+                                                        margin: "0, 3px, 3px, 3px,",
                                                     }}
                                                 />
                                             </Grid>
                                             <Grid item>
-                                                <hr />
                                                 <img
                                                     src="https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact"
                                                     alt="diegoaph"
