@@ -176,7 +176,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
-                                            {lang ? "CV🡣" : "CV🡣"}
+                                            {lang ? "CV↓" : "CV↓"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
