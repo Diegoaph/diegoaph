@@ -80,26 +80,26 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("top")}>
-                            {lang ? "Projects Gallery" : "Mi Galería"}
+                            {!lang ? "Projects Gallery" : "Mi Galería"}
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={() =>
                                 handleScrollToSection("tools-technologies")
                             }>
-                            {lang
+                            {!lang
                                 ? "Tools and Technologies"
                                 : "Tecnologías que uso"}
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("about")}>
-                            {lang ? "About Me" : "Sobre Mí"}
+                            {!lang ? "About Me" : "Sobre Mí"}
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={() => handleScrollToSection("education")}>
-                            {lang ? "My Education" : "Mi Educación"}
+                            {!lang ? "My Education" : "Mi Educación"}
                         </Button>
                     </nav>
                 </Stack>
@@ -133,7 +133,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                             color: themePalette.LIGHT,
                                             textDecorationColor: "none",
                                         }}>
-                                        {lang
+                                        {!lang
                                             ? "Checkout my latest Projects"
                                             : "Dale un vistazo a mis proyectos"}
                                     </NavLink>
@@ -159,7 +159,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "5rem",
                                     }}>
-                                    {lang
+                                    {!lang
                                         ? "Tools and technologies"
                                         : "Tecnologías y herramientas"}
                                 </Header2>
@@ -170,7 +170,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "0rem",
                                     }}>
-                                    {lang
+                                    {!lang
                                         ? "that i've used on my projects:"
                                         : "que he usado en mis proyectos:"}
                                 </Header2>
@@ -213,7 +213,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "5rem",
                                     }}>
-                                    {lang
+                                    {!lang
                                         ? "I'm Diego!"
                                         : "Hola! yo soy Diego!"}
                                 </Header2>{" "}
@@ -259,7 +259,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         lg={6}
                                         className="description-container">
                                         <Typography>
-                                            {lang ? (
+                                            {!lang ? (
                                                 <p>
                                                     <strong>
                                                         Creating User-Centric
@@ -386,7 +386,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         color: themePalette.LIGHT,
                                         marginTop: "3rem",
                                     }}>
-                                    {lang
+                                    {!lang
                                         ? "My Flull-Stack Dev Formation"
                                         : "Mi formación como desarrollador web"}
                                 </Header2>{" "}
@@ -413,7 +413,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                 </Grid>
             </Container>
             <footer className="footer">
-                <h4>{lang ? "Connect with me" : "Contáctame"}</h4>
+                <h4>{!lang ? "Connect with me" : "Contáctame"}</h4>
                 <p>
                     <a
                         className="social"
@@ -478,7 +478,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                     <a
                         className="social"
                         href={
-                            lang
+                            !lang
                                 ? "Diego_Pacheco_Full_Stack_cven.pdf"
                                 : "Diego_Pacheco_Full_Stack_cves.pdf"
                         }
