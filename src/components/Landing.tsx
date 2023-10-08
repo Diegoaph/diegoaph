@@ -125,7 +125,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                     className="h1"
                                     style={{
                                         color: themePalette.LIGHT,
-                                        marginTop: "6rem",
+                                        marginTop: "6.5rem",
                                     }}>
                                     <NavLink
                                         to="/projects"
