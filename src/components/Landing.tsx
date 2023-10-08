@@ -44,14 +44,14 @@ enum pics {
     GH = "Github.jpg",
 }
 enum certs {
-    FULLSTACK = "https://media.licdn.com/dms/image/D4E22AQH2JciUNRY6ZA/feedshare-shrink_2048_1536/0/1689991632684?e=1696464000&v=beta&t=FO5ZOVPkybhQj096jpO1uCldfJhbVKIUFfZ-KmhnY_g",
-    FRONTEND = "https://media.licdn.com/dms/image/D4E22AQE_Uew3OUc1yw/feedshare-shrink_2048_1536/0/1690167083293?e=1696464000&v=beta&t=9MbCE0_jfkxQ2AINOA-cvjF3dxyn4-xKV7plYkIDBX4",
-    ENGLISH = "https://media.licdn.com/dms/image/D4E22AQHuodEmQK89HQ/feedshare-shrink_1280/0/1690173496222?e=1696464000&v=beta&t=1T3F9k2yCjuza5g4a2UleVTej77tW8_p61GHHSunsOY",
-    TERMINAL = "https://media.licdn.com/dms/image/D4E22AQEpwEtWqZOPuA/feedshare-shrink_2048_1536/0/1690167888626?e=1696464000&v=beta&t=Vlz-cxzELVynsLzrnPhrbL_BjIpqNxC3lqjUlVulBA0",
-    GITHUB = "https://media.licdn.com/dms/image/D4E22AQEzRwS3BvWbQw/feedshare-shrink_2048_1536/0/1690168561993?e=1696464000&v=beta&t=ka15gkJf3A0D40hW1LRmRmyWXtjzJuPNui5nFKIAuys",
-    ALGOS = "https://media.licdn.com/dms/image/D4E22AQFHpFdcUSdWQw/feedshare-shrink_2048_1536/0/1690167596625?e=1696464000&v=beta&t=nWo1JOCryd6fl521mHE1LFkjQSKklpphngEeB1ZTaeg",
-    BASICS = "https://media.licdn.com/dms/image/D4E22AQEbCpJwrk6Srw/feedshare-shrink_2048_1536/0/1690167317933?e=1696464000&v=beta&t=fp_lXRnjFNeGyPIwb04kn06akm0hCLDZlK9gPDEsiUQ",
-    LINUX = "https://media.licdn.com/dms/image/D4E22AQH7JaJOaHpoqQ/feedshare-shrink_2048_1536/0/1690168872290?e=1696464000&v=beta&t=ZmnGszkZc-8AccGOYFOt-50t0yhmSgebdwauGhAr9Xc",
+    FULLSTACK = "https://i.imgur.com/xjBvdRO.jpg",
+    FRONTEND = "https://i.imgur.com/2YUTvEf.jpg",
+    ENGLISH = "https://i.imgur.com/JbW5oi3.jpg",
+    TERMINAL = "https://i.imgur.com/7meTrhL.jpg",
+    GITHUB = "https://i.imgur.com/UbiueKD.jpg",
+    ALGOS = "https://i.imgur.com/u7SepwY.jpg",
+    BASICS = "https://i.imgur.com/DnpyZpt.jpg",
+    LINUX = "https://i.imgur.com/5IHbNBR.jpg",
 }
 const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
     const handleScrollToSection = (sectionId: string) => {
@@ -203,36 +203,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                     marginBottom: "3rem",
                                     marginTop: "2rem",
                                 }}
-                            />
-                            <Grid item>
-                                <Header2
-                                    className="h1"
-                                    style={{
-                                        color: themePalette.LIGHT,
-                                        marginTop: "3rem",
-                                    }}>
-                                    {lang
-                                        ? "My Flull-Stack Dev Formation"
-                                        : "Mi formación como desarrollador web"}
-                                </Header2>{" "}
-                                <span className="certs-container">
-                                    {Object.values(certs).map((cert, index) => (
-                                        <div>
-                                            <img
-                                                key={index}
-                                                src={cert}
-                                                alt={cert}
-                                                height="240"
-                                                width="300"
-                                                style={{
-                                                    borderRadius: "5px",
-                                                    margin: "3px",
-                                                }}
-                                            />
-                                        </div>
-                                    ))}
-                                </span>
-                            </Grid>{" "}
+                            />{" "}
                             <Divider
                                 className="divider"
                                 id="about"
@@ -408,6 +379,35 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                         </Typography>
                                     </Grid>
                                 </Grid>
+                            </Grid>
+                            <Grid item>
+                                <Header2
+                                    className="h1"
+                                    style={{
+                                        color: themePalette.LIGHT,
+                                        marginTop: "3rem",
+                                    }}>
+                                    {lang
+                                        ? "My Flull-Stack Dev Formation"
+                                        : "Mi formación como desarrollador web"}
+                                </Header2>{" "}
+                                <span className="certs-container">
+                                    {Object.values(certs).map((cert, index) => (
+                                        <div>
+                                            <img
+                                                key={index}
+                                                src={cert}
+                                                alt={cert}
+                                                height="240"
+                                                width="300"
+                                                style={{
+                                                    borderRadius: "5px",
+                                                    margin: "3px",
+                                                }}
+                                            />
+                                        </div>
+                                    ))}
+                                </span>
                             </Grid>
                         </Grid>
                     </Grid>

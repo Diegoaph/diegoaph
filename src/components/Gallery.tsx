@@ -92,7 +92,7 @@ const Gallery = () => {
     }
     const items = [
         {
-            URL: "https://i.imgur.com/gh9B5dh.png",
+            URL: "https://i.imgur.com/kxOSAOo.png",
             PROJECT: "Bookings engine",
             DETAIL: "Home Page",
             TECHNOLOGIES: [
