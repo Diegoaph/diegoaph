@@ -93,13 +93,13 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                         </Button>
                         <Button
                             variant="outlined"
-                            onClick={() => handleScrollToSection("education")}>
-                            {lang ? "My Education" : "Mi Educación"}
+                            onClick={() => handleScrollToSection("about")}>
+                            {lang ? "About Me" : "Sobre Mí"}
                         </Button>
                         <Button
                             variant="outlined"
-                            onClick={() => handleScrollToSection("about")}>
-                            {lang ? "About Me" : "Sobre Mí"}
+                            onClick={() => handleScrollToSection("education")}>
+                            {lang ? "My Education" : "Mi Educación"}
                         </Button>
                     </nav>
                 </Stack>
@@ -196,14 +196,6 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                     ))}
                                 </span>
                             </Grid>{" "}
-                            <Divider
-                                className="divider"
-                                id="education"
-                                style={{
-                                    marginBottom: "3rem",
-                                    marginTop: "2rem",
-                                }}
-                            />{" "}
                             <Divider
                                 className="divider"
                                 id="about"
@@ -380,6 +372,14 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                     </Grid>
                                 </Grid>
                             </Grid>
+                            <Divider
+                                className="divider"
+                                id="education"
+                                style={{
+                                    marginBottom: "3rem",
+                                    marginTop: "2rem",
+                                }}
+                            />{" "}
                             <Grid item>
                                 <Header2
                                     className="h1"
