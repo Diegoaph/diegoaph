@@ -49,7 +49,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
 
     const modalContent = (
         <div>
-            <h4>{lang ? "Connect with me" : "Contáctate conmigo"}</h4>
+            <h4>{!lang ? "Connect with me" : "Contáctate conmigo"}</h4>
             <p>
                 <a
                     className="social"
@@ -114,7 +114,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                 <a
                     className="social"
                     href={
-                        lang
+                        !lang
                             ? "Diego_Pacheco_Full_Stack_cven.pdf"
                             : "Diego_Pacheco_Full_Stack_cves.pdf"
                     }
@@ -169,14 +169,14 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                     spacing={0.3}>
                                     <a
                                         href={
-                                            lang
+                                            !lang
                                                 ? "Diego_Pacheco_Full_Stack_cven.pdf"
                                                 : "Diego_Pacheco_Full_Stack_cves.pdf"
                                         }
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
                                         <Button variant="outlined">
-                                            {lang ? "CV↓" : "CV↓"}
+                                            {!lang ? "CV↓" : "CV↓"}
                                         </Button>
                                     </a>{" "}
                                     <NavLink
@@ -200,10 +200,10 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                                 },
                                             }}>
                                             {isProjectsPage
-                                                ? lang
+                                                ? !lang
                                                     ? "Home"
                                                     : "Inicio"
-                                                : lang
+                                                : !lang
                                                 ? "Projects"
                                                 : "Proyectos"}
                                         </Button>
@@ -211,7 +211,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                     <Button
                                         variant="contained"
                                         onClick={handleOpen}>
-                                        {lang ? "Contact" : "Contacto"}
+                                        {!lang ? "Contact" : "Contacto"}
                                     </Button>
                                     <Modal
                                         open={open}
