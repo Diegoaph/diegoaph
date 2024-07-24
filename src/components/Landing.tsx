@@ -44,14 +44,14 @@ enum pics {
     GH = "Github.jpg",
 }
 enum certs {
-    FULLSTACK = "https://i.imgur.com/xjBvdRO.jpg",
-    FRONTEND = "https://i.imgur.com/2YUTvEf.jpg",
-    ENGLISH = "https://i.imgur.com/C80O1os.png",
-    TERMINAL = "https://i.imgur.com/7meTrhL.jpg",
-    GITHUB = "https://i.imgur.com/UbiueKD.jpg",
-    ALGOS = "https://i.imgur.com/u7SepwY.jpg",
-    BASICS = "https://i.imgur.com/DnpyZpt.jpg",
-    LINUX = "https://i.imgur.com/5IHbNBR.jpg",
+  FULLSTACK = 'https://i.imgur.com/xjBvdRO.jpg',
+  FRONTEND = 'https://i.imgur.com/2YUTvEf.jpg',
+  ENGLISH = 'https://i.imgur.com/s8uxBRr.png',
+  TERMINAL = 'https://i.imgur.com/7meTrhL.jpg',
+  GITHUB = 'https://i.imgur.com/UbiueKD.jpg',
+  ALGOS = 'https://i.imgur.com/u7SepwY.jpg',
+  BASICS = 'https://i.imgur.com/DnpyZpt.jpg',
+  LINUX = 'https://i.imgur.com/5IHbNBR.jpg'
 }
 const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
     const handleScrollToSection = (sectionId: string) => {
