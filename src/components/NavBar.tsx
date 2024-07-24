@@ -179,7 +179,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                             {!lang ? "CV↓" : "CV↓"}
                                         </Button>
                                     </a>{" "}
-                                    <NavLink
+                                    {/* <NavLink
                                         to={isProjectsPage ? "/" : "/projects"}
                                         style={{
                                             textDecoration: "none",
@@ -207,7 +207,7 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                                 ? "Projects"
                                                 : "Proyectos"}
                                         </Button>
-                                    </NavLink>
+                                    </NavLink> */}
                                     <Button
                                         variant="contained"
                                         onClick={handleOpen}>

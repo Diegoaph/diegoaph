@@ -27,7 +27,7 @@ const Projects: React.FC<{ lang: boolean }> = ({ lang }) => {
                     <div className={styles.details}>
                         <h3 className={styles.title}>{item.title}</h3>
                         <p className={styles.description}>
-                            {lang ? item.description : item.descripcion}
+                            {lang ? item.descripcion : item.description}
                         </p>
                     </div>
                 </a>
