@@ -134,7 +134,7 @@ const Landing: React.FC<{ lang: boolean }> = ({ lang }) => {
                                             textDecorationColor: "none",
                                         }}>
                                         {!lang
-                                            ? "Checkout my latest Projects"
+                                            ? "Take a look at my Projects"
                                             : "Dale un vistazo a mis proyectos"}
                                     </NavLink>
                                 </Header1>
