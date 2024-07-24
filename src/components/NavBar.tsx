@@ -170,8 +170,8 @@ export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
                                     <a
                                         href={
                                             !lang
-                                                ? "Diego_Pacheco_Full_Stack_cven.pdf"
-                                                : "Diego_Pacheco_Full_Stack_cves.pdf"
+                                                ? "diegoPachecoResume.pdf"
+                                                : "DiegoPachecoCurriculum.pdf"
                                         }
                                         download="Diego-Pacheco-full-stack-resume"
                                         target="blank">
