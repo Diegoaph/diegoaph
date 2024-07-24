@@ -12,7 +12,8 @@ import {
 } from "@mui/material";
 import TranslateIcon from "@mui/icons-material/Translate";
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+//import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 
 const HoverableH2 = styled("h2")({
@@ -32,8 +33,8 @@ interface NavBarProps {
     setLang: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export const NavBar: React.FC<NavBarProps> = ({ lang, setLang }) => {
-    const location = useLocation();
-    const isProjectsPage = location.pathname === "/projects";
+   // const location = useLocation();
+    //const isProjectsPage = location.pathname === "/projects";
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
