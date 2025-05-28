@@ -1,0 +1,97 @@
+.navbar {
+  z-index: 9;
+  height: 3rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100vw; // ⬅️ usa viewport width directamente
+  max-width: 100vw; 
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0; 
+
+  background-color: #cccccc86; 
+
+  .logo {
+    height: 2rem;&:hover {
+      filter:drop-shadow(0 0 2em #0cdbdf);
+      scale: 1.1;
+    }
+  }
+
+  .navOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+
+    .navOption {
+      height: 80%;
+      padding: 0px 10px;
+    }
+  }
+}
+
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(32, 32, 32);
+  font-size: larger;
+  font-weight: bolder;
+  .socialContainer {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .social {
+      :hover {
+        opacity: 0.8;
+        scale: 1.1;
+      }
+      .socialImg {
+        height: 2rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .cv {
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    color: dodgerblue;
+    text-decoration: none;
+    &:hover::after {
+      opacity: 1;
+      animation: shimmer 1s linear forwards;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, rgba(0, 128, 255, 0.377), transparent);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}

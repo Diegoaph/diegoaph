@@ -1,43 +1,93 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+:root {
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    
+  --color-bg-dark: #242424;
+  --color-text-dark: rgba(255, 255, 255, 0.87);
+  --color-bg-light: #ffffff;
+  --color-text-light: #213547;
+
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: var(--font-main);
+  color-scheme: light dark;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: inherit;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+a {
+  font-weight: 500;
+  color: dodgerblue;
+  text-decoration: none;
+  transition: color 0.2s, font-weight 0.2s;
 }
 
-.card {
-    padding: 2em;
+a:hover {
+  color: #3037c4;
+  font-weight: 700;
 }
 
-.read-the-docs {
-    color: #888;
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0.5em 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:hover {
+  scale:1.07;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.555));
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-text-light);
+    background-color: var(--color-bg-light);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #000;
+  }
 }

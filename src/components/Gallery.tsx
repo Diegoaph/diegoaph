@@ -1,5 +1,4 @@
 import Carousel from 'react-material-ui-carousel';
-import { themePalette } from '../config/theme.cofig';
 import React, { CSSProperties } from 'react';
 interface ItemProps {
   item: {
@@ -16,7 +15,6 @@ const Item: React.FC<ItemProps> = ({ item }) => {
     textAlign: 'center',
     width: 'auto',
     height: '70%',
-    backgroundColor: themePalette.BG,
     boxShadow: '8px 8px 8px 8px rgba(0, 0, 0, 0.25)',
     marginBottom: '1rem'
   };
