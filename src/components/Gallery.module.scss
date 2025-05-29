@@ -1,0 +1,306 @@
+.galleryContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  .carousel {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(91, 213, 218, 0.2);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  min-height: 600px;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    min-height: 500px;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+
+    .imageOverlay {
+      opacity: 1;
+      backdrop-filter: blur(8px);
+    }
+
+    .projectImage {
+      transform: scale(1.05);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 300px;
+  }
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 26, 0.7),
+    rgba(18, 18, 18, 0.8),
+    rgba(26, 26, 26, 0.9)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(0px);
+}
+
+.overlayContent {
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
+  max-width: 80%;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    max-width: 90%;
+  }
+}
+
+.projectTitle {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #5bd5da, #4ac5ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+}
+
+.projectDetail {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  background: linear-gradient(135deg, #5bd5da, #4ac5ca);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(91, 213, 218, 0.3);
+  min-width: 120px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(91, 213, 218, 0.4);
+    background: linear-gradient(135deg, #4ac5ca, #3ab5ba);
+  }
+
+  &.secondary {
+    background: transparent;
+    border: 2px solid rgba(91, 213, 218, 0.8);
+    color: #5bd5da;
+
+    &:hover {
+      background: rgba(91, 213, 218, 0.1);
+      border-color: #5bd5da;
+      color: #ffffff;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+    min-width: 100px;
+  }
+}
+
+.technologiesSection {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(91, 213, 218, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.techTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text-dark, #f5f5f5);
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.technologiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 0.8rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 0.6rem;
+  }
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(91, 213, 218, 0.1);
+
+  &:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: rgba(91, 213, 218, 0.1);
+    border-color: rgba(91, 213, 218, 0.3);
+    box-shadow: 0 8px 20px rgba(91, 213, 218, 0.2);
+
+    .techName {
+      color: #5bd5da;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.6rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0.4rem;
+  }
+}
+
+.techImage {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  border-radius: 0.3rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+
+  @media screen and (max-width: 768px) {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.techName {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary, #e0e0e0);
+  text-align: center;
+  transition: color 0.3s ease;
+  line-height: 1.2;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.65rem;
+  }
+}
+
+// Entrance animations
+.itemContainer {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Loading skeleton (optional)
+.techItem {
+  &.loading {
+    background: linear-gradient(90deg, rgba(91, 213, 218, 0.1) 25%, rgba(91, 213, 218, 0.2) 50%, rgba(91, 213, 218, 0.1) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

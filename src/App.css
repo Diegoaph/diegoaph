@@ -1,43 +1,118 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+:root {
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+
+  /* Improved color palette for better readability */
+  --color-bg-dark: #1a1a1a;
+  --color-text-dark: #f5f5f5;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b8b8b8;
+  --color-accent: #5bd5da;
+  --color-accent-hover: #4ac5ca;
+
+  --color-bg-light: #ffffff;
+  --color-text-light: #213547;
+  --color-text-light-secondary: #4a5568;
+
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: var(--font-main);
+  color-scheme: light dark;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: inherit;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+a {
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.2s ease;
 }
 
-.card {
-    padding: 2em;
+a:hover {
+  color: var(--color-accent-hover);
+  font-weight: 600;
 }
 
-.read-the-docs {
-    color: #888;
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  margin: 1rem 0;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  line-height: 1.3;
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+p {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(91, 213, 218, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(91, 213, 218, 0.3);
+  background-color: var(--color-accent-hover);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg-dark: var(--color-bg-light);
+    --color-text-dark: var(--color-text-light);
+    --color-text-secondary: var(--color-text-light-secondary);
+    --color-text-muted: #6b7280;
+  }
+
+  button {
+    background-color: var(--color-accent);
+    color: #ffffff;
+  }
 }
