@@ -63,19 +63,18 @@ const { lang } = useLanguage();
             <div className={styles.antenna}></div>
           </div>
         </div>
+        <h1 className={styles.title}>{!lang ? 'Page Not Found!' : '¡Página no encontrada!'}</h1>
 
-        <h1 className={styles.title}>{!lang ? '¡Page Not Found!' : '¡Página no encontrada!'}</h1>
-
-        {/* Funny Message */}
         <p className={styles.subtitle}>
           {!lang
-            ? 'Yep, i did controled not found pages'
-            : 'Sí, también controlé las páginas no encontradas'}
+            ? 'Yes, I also handled not found pages.'
+            : 'Sí, también controlé las páginas no encontradas.'}
         </p>
 
         <p className={styles.description}>
-          Parece que esta página decidió tomarse unas vacaciones. Pero no te preocupes, hasta los
-          errores aquí tienen estilo.
+          {!lang
+            ? 'It seems this page decided to take a vacation. But don’t worry, even errors have style here.'
+            : 'Parece que esta página decidió tomarse unas vacaciones. Pero no te preocupes, hasta los errores aquí tienen estilo.'}
         </p>
 
         {/* Floating Elements */}
