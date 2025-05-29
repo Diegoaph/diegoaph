@@ -1,21 +1,21 @@
 import React from 'react';
 
 import styles from './Landing.module.scss';
-import Gallery from './Gallery';
-
+// import Gallery from './Gallery';
+import Cta from './Cta/Cta'
 import { useLanguage } from '../context/LangContext';
 
 enum pics {
   JS = 'Javascript.jpg',
   TS = 'Typescript.jpg',
   REACT = 'React.jpg',
-  RX = 'Redux.jpg',
+  // RX = 'Redux.jpg',
   SCSS = 'sass.png',
   NODE = 'Node.jpg',
   EX = 'Express.jpg',
   FB = 'Firebase.jpg',
   PG = 'Postgresql.jpg',
-  MDB = 'Mongodb.jpg',
+  // MDB = 'Mongodb.jpg',
   GIT = 'Git.jpg',
   GH = 'Github.jpg'
 }
@@ -34,26 +34,11 @@ const Landing: React.FC = ({}) => {
 
   return (
     <div className={styles.ppal}>
-      <h1>{!lang ? 'Take a look at my Projects' : 'Dale un vistazo a mis proyectos'}</h1>
-      <Gallery />
-      <h2 className={styles.sectionHeader}>
+      <h1>
         {!lang
-          ? 'Tools and technologies that i use to build my projects with'
-          : 'Tecnologías y herramientas con las que construyo mis proyectos'}
-      </h2>
-      <section className={styles.techContainer}>
-        {Object.values(pics).map((tech, index) => (
-          <div className={styles.techItem}>
-            <img
-              className={styles.techImg}
-              key={index}
-              src={tech}
-              alt={tech}
-            />
-            <p className={styles.techName}>{`${tech.slice(0, -4)}`}</p>
-          </div>
-        ))}
-      </section>
+          ? 'Full-Stack Developer - Custom Web Solutions That Drive Results'
+          : 'Desarrollador Full-Stack - Soluciones Web Personalizadas Que Generan Resultados'}
+      </h1>
       <h2 className={styles.sectionHeader}>
         {!lang
           ? "Hi, I'm Diego! I’ll build a custom website just for you, to help your business shine online"
@@ -75,7 +60,6 @@ const Landing: React.FC = ({}) => {
         {!lang ? (
           <p className={styles.aboutDescription}>
             <strong>Building Clean, User-Centered Web Experiences</strong>
-            <br />
             <br />
             I'm a Full-Stack Developer focused on creating fast, scalable, and visually polished web
             solutions.
@@ -110,6 +94,25 @@ const Landing: React.FC = ({}) => {
           </p>
         )}
       </div>
+      <h2 className={styles.sectionHeader}>
+        {!lang
+          ? 'Tools and technologies that i use to build my projects with'
+          : 'Tecnologías y herramientas con las que construyo mis proyectos'}
+      </h2>
+      <section className={styles.techContainer}>
+        {Object.values(pics).map((tech, index) => (
+          <div className={styles.techItem}>
+            <img
+              className={styles.techImg}
+              key={index}
+              src={tech}
+              alt={tech}
+            />
+            <p className={styles.techName}>{`${tech.slice(0, -4)}`}</p>
+          </div>
+        ))}
+      </section>
+      <Cta />
       <h2 className={styles.h2}>
         {!lang ? 'My Flull-Stack Dev Formation' : 'Mi formación como desarrollador web'}
       </h2>{' '}
@@ -125,6 +128,8 @@ const Landing: React.FC = ({}) => {
           </div>
         ))}
       </span>
+      {/* <h2 className={styles.h2}>{!lang ? 'Take a look at my Projects' : 'Dale un vistazo a mis proyectos'}</h2>
+      <Gallery /> */}
       <footer className={styles.footer}>
         {!lang ? 'Connect with me' : 'Contáctate conmigo'}
         <section className={styles.socialContainer}>
@@ -181,8 +186,8 @@ const Landing: React.FC = ({}) => {
         </section>
         <a
           className={styles.cv}
-          href={!lang ? 'Diego_Pacheco_Full_Stack_cven.pdf' : 'Diego_Pacheco_Full_Stack_cves.pdf'}
-          download='Diego-Pacheco-full-stack-CV'>
+          href={!lang ? 'diegoPachecoResume.pdf' : 'DiegoPachecoCurriculum.pdf'}
+          download={!lang ? 'diegoPachecoResume' : 'DiegoPachecoCurriculum'}>
           {!lang ? 'Download CV' : 'Descargar CV'}
         </a>
       </footer>

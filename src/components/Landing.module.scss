@@ -1,178 +1,289 @@
 .ppal {
-    padding:1rem;
-  .sectionHeader {
-    font-size: larger;
-  }
+  padding:0 ;
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 8rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    background: linear-gradient(135deg, #6ad3d6, #11595c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    margin-bottom: 3rem;
+  }
+
+  .sectionHeader {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    text-align: center;
+    margin: 3rem 0 2rem;
+    line-height: 1.4;
+  }
+
   .techContainer {
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    width: 95%;
-    gap: 10px;
-    margin: auto;
-    :hover {
-      opacity: 0.8;
-      scale: 1.1;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+
     .techItem {
-      border: 1px solid #dcdcdc;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(91, 213, 218, 0.2);
       border-radius: 1rem;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+
+      &:hover {
+        transform: translateY(-5px) scale(1.05);
+        border-color: rgba(91, 213, 218, 0.5);
+        box-shadow: 0 10px 30px rgba(91, 213, 218, 0.2);
+        background: rgba(255, 255, 255, 0.05);
+      }
 
       .techImg {
-        width: 5rem;
-        aspect-ratio: 1;
-        margin: 0.5rem;
-        filter: drop-shadow(0 0 0.2em #000);
+        width: 4rem;
+        height: 4rem;
+        object-fit: contain;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
         border-radius: 0.5rem;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease;
+        margin-bottom: 0.5rem;
       }
 
       .techName {
-        font-weight: bolder;
-        text-align: center;
-        color: #706d6d;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--color-text-secondary);
+        margin: 0;
+        transition: color 0.3s ease;
+      }
 
-        &:hover {
-          opacity: 1;
-          scale: 1;
-        }
+      &:hover .techName {
+        color: var(--color-text-dark);
       }
 
       @media screen and (max-width: 768px) {
-        border: none;
-
+        padding: 0.8rem;
+        
         .techImg {
-          width: 2rem;
+          width: 3rem;
+          height: 3rem;
         }
 
         .techName {
-          display: none;
+          font-size: 0.8rem;
         }
       }
     }
   }
+
   .about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; 
-  gap: 1rem;
-  justify-content: center;
-  align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    margin: 3rem 0;
+    align-items: start;
 
-  > .photoStats,
-  > .aboutDescription {
-    flex: 1 1 300px; //  grow, shrink, min-width
-    max-width: 500px;
-  }
-
-  .photoStats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-
-    .photo {
-      border-radius: 0.5rem;
-      max-width: 100%;
-      height: auto;
+    @media screen and (max-width: 968px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
     }
 
-    .stats {
-      width: 100%;
-      max-width: 100%;
+    .photoStats {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+
+      .photo {
+        border-radius: 1rem;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      .stats {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .aboutDescription {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      text-align: left;
+
+      @media screen and (max-width: 968px) {
+        text-align: center;
+      }
+
+      strong {
+        color: var(--color-text-dark);
+        font-size: 1.1em;
+        display: block;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #5bd5da, #4ac5ca);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
     }
   }
 
-  .aboutDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
+  .h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    text-align: center;
+    margin: 3rem 0 2rem;
+  }
+
+  .certsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
     padding: 1rem;
-    font-size: larger;
-    color: rgb(216, 216, 216);
-    text-align: start;
-    word-wrap: break-word;
-  }
-}.certsContainer {
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 95%;
-  gap: 10px;
-  margin: auto;
 
-  .certItem {
-    position: relative; // ⬅️ necesario para que z-index funcione
-    border-radius: 1rem;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    z-index: 1;
+    .certItem {
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(91, 213, 218, 0.1);
 
-    &:hover {
-      opacity: 0.9;
-      transform: scale(2); // usar transform, no "scale" directo
-      z-index: 99;
+      &:hover {
+        transform: scale(1.5);
+        z-index: 10;
+        box-shadow: 0 15px 40px rgba(91, 213, 218, 0.2);
+        border-color: rgba(91, 213, 218, 0.3);
+      }
+
+      .certImg {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.4 / 1;
+        object-fit: cover;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        transition: inherit;
+      }
     }
 
-    .certImg {
-      width: 20rem;
-      aspect-ratio: 1.4 / 1;
-      margin: 0.5rem;
-      filter: drop-shadow(0 0 0.2em #000);
-      border-radius: 0.5rem;
-      transition: inherit;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
     }
   }
-}
 
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(32, 32, 32);
-    font-size: larger;
-    font-weight: bolder;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(91, 213, 218, 0.2);
+
+    > span {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      font-weight: 600;
+      color: var(--color-text-dark);
+      margin-bottom: 1.5rem;
+    }
+
     .socialContainer {
       display: flex;
-      gap: 10px;
-      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 1rem 0;
+
       .social {
-        :hover {
-          opacity: 0.8;
-          scale: 1.1;
+        transition: all 0.3s ease;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(91, 213, 218, 0.2);
+
+        &:hover {
+          transform: translateY(-3px) scale(1.1);
+          background: rgba(91, 213, 218, 0.1);
+          border-color: rgba(91, 213, 218, 0.4);
+          box-shadow: 0 8px 20px rgba(91, 213, 218, 0.2);
         }
+
         .socialImg {
-          height: 2rem;
-          aspect-ratio: 1;
+          height: 2.5rem;
+          width: 2.5rem;
           object-fit: cover;
           border-radius: 0.3rem;
+          transition: inherit;
         }
       }
     }
+
     .cv {
       position: relative;
       overflow: hidden;
-      color: dodgerblue;
+      color: var(--color-accent);
       text-decoration: none;
-      &:hover::after {
-        opacity: 1;
-        animation: shimmer 1s linear forwards;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border: 2px solid var(--color-accent);
+      border-radius: 2rem;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+      background: rgba(91, 213, 218, 0.1);
+
+      &:hover {
+        background: var(--color-accent);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(91, 213, 218, 0.3);
+
+        &::after {
+          opacity: 1;
+          animation: shimmer 1s linear forwards;
+        }
       }
+
       &::after {
         content: '';
         position: absolute;
-        width: 15ch;
+        top: 0;
+        left: -100%;
+        width: 100%;
         height: 100%;
-        background: linear-gradient(to right, transparent, rgba(0, 128, 255, 0.377), transparent);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255),
+          transparent
+        );
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.1s ease;
@@ -181,138 +292,42 @@
   }
 }
 
-.h2:hover {
-  filter: drop-shadow(0 0 2em #006465);
-  cursor: pointer;
-}
-.descriptionContainer {
-  padding-left: 2rem;
-  text-align: left;
-}
-
-.certsContainer {
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
-  width: 100%;
-  margin: auto;
-}
-.aboutContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 90%;
-  margin: 1rem;
-  flex-direction: row;
-}
-.fotoContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.word {
-  font-weight: bolder;
-  text-shadow: 0 0.2em 0.2em black;
-}
-.social {
-  margin: 0 1rem 0 1rem;
-}
-.social:hover {
-  filter: drop-shadow(0 0 2em #13b3ab);
-}
-
-.socialimg {
-  border-radius: 30%;
-}
-
-.footer {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.2),
-    rgba(00, 0, 0, 0.01),
-    rgba(00, 0, 0, 0)
-  );
-  padding-bottom: 1rem;
-}
-
-#top {
-  margin-bottom: 3rem;
-}
-#tools-technologies {
-  margin-bottom: 0;
-  padding: 2rem;
-}
-#education {
-  margin-bottom: 1rem;
-  padding: 2rem;
-}
-#about {
-  margin-bottom: 1rem;
-  padding: 2rem;
-}
-@media (max-width: 860px) {
-  .aside {
-    margin-top: 2.3rem;
-
-    width: 100% !important;
-  }
-  #top {
-    margin-bottom: 3.3rem;
-  }
-  #tools-technologies {
-    margin-bottom: 0;
-    padding: 2rem;
-  }
-  #education {
-    margin-bottom: 0;
-    padding: 2rem;
-  }
-  #about {
-    margin-bottom: 0;
-    padding: 2rem;
-  }
-  .ppal {
-    width: 100%;
-  }
-
-  @media (max-width: 400px) {
-    .descriptionContainer {
-      margin: 1rem;
-    }
-    .aside {
-      margin-top: 2rem;
-
-      width: 100% !important;
-    }
-    .ppal {
-      width: 100%;
-    }
-    #top {
-      margin-bottom: 5rem;
-    }
-    #tools-technologies {
-      margin-top: 20rem;
-      margin-bottom: 3rem;
-    }
-    #education {
-      margin-top: 20rem;
-      margin-bottom: 4rem;
-    }
-    #about {
-      margin-top: 20rem;
-      margin-bottom: 2rem;
-    }
-  }
-}
 @keyframes shimmer {
   0% {
     left: -100%;
   }
   100% {
-    left: 200%;
+    left: 100%;
+  }
+}
+
+// Responsive improvements
+@media screen and (max-width: 480px) {
+  .ppal {
+    padding: 1rem 0.5rem;
+    margin-top: 6rem;
+
+    .techContainer {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+    }
+
+    .about {
+      gap: 1.5rem;
+    }
+
+    .certsContainer {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .footer .socialContainer {
+      gap: 0.8rem;
+
+      .social .socialImg {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
   }
 }
