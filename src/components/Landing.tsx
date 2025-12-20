@@ -27,7 +27,8 @@ enum certs {
   GITHUB = 'github_git.webp',
   ALGOS = 'algorithms.jpeg',
   BASICS = 'basics.webp',
-  LINUX = 'linux_env.webp'
+  LINUX = 'linux_env.webp',
+  IA = 'Certificado_IA.png'
 }
 const Landing: React.FC = ({}) => {
   const { lang } = useLanguage();
@@ -36,12 +37,12 @@ const Landing: React.FC = ({}) => {
     <div className={styles.ppal}>
       <h1>
         {!lang
-          ? 'Full-Stack Developer - Custom Web Solutions That Drive Results'
+          ? 'Frontend / Fullstack Developer Building product-focused web applications'
           : 'Desarrollador Full-Stack - Soluciones Web Personalizadas Que Generan Resultados'}
       </h1>
       <h2 className={styles.sectionHeader}>
         {!lang
-          ? "Hi, I'm Diego! I’ll build a custom website just for you, to help your business shine online"
+          ? "Hi, I'm Diego. I build scalable web applications for product teams"
           : 'Hola, soy Diego! crearé una web a tu medida, para que tu negocio destaque en internet'}
       </h2>
       <div className={styles.about}>
@@ -51,15 +52,15 @@ const Landing: React.FC = ({}) => {
             alt='Diego Pacheco'
             className={styles.photo}
           />
-          <img
+          {/* <img
             src='https://github-readme-stats.vercel.app/api/top-langs?username=diegoaph&show_icons=true&locale=en&layout=compact'
             alt='diegoaph'
             className={styles.stats}
-          />
+          /> */}
         </div>
         {!lang ? (
           <p className={styles.aboutDescription}>
-            <strong>Building Clean, User-Centered Web Experiences</strong>
+            <strong>I work closely with product and design teams</strong>
             <br />
             I'm a Full-Stack Developer focused on creating fast, scalable, and visually polished web
             solutions.

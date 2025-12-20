@@ -61,6 +61,8 @@
     gap: 0.8rem;
 
     .navOption {
+    &:last-child { animation: _pulse 5s infinite; }  
+
       height: 2.5rem;
       padding: 0.6rem 1.2rem;
       background: rgba(91, 213, 218, 0.1);
@@ -112,7 +114,6 @@
 
     .navOptions {
       gap: 0.5rem;
-
       .navOption {
         padding: 0.5rem 0.8rem;
         font-size: 0.8rem;
@@ -304,5 +305,14 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes _pulse {
+  0% {
+    box-shadow: 0 0 0 0 #1b71d2bb;
+  }
+
+  100% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 101, 0);
   }
 }
