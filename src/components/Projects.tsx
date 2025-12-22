@@ -3,9 +3,9 @@ import styles from "./Projects.module.scss";
 import { useLanguage } from "../context/LangContext";
 
 const clients = [
-  { name: "DA Haus Mérida", url: "https://dahausmerida.com" },
-  { name: "Consultar Nutricionista", url: "https://consultarnutricionista.com" },
-  { name: "Siempre Más – Mi Cuenta", url: "https://micuenta.siempremas.com.ar" },
+  { name: "Dahaus Mérida, Venezuela", url: "https://dahausmerida.com" },
+  { name: "Daniela Chacón: Nutricionista Funcional, Colombia", url: "https://consultarnutricionista.com" },
+  { name: "Farmacias Siempre Más, Argentina", url: "https://micuenta.siempremas.com.ar" },
 ];
 
 const Projects: React.FC = () => {
@@ -34,7 +34,6 @@ const Projects: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating elements inspired by Cta */}
       <div className={styles.floatingElements}>
         <div className={styles.floatingCircle}></div>
         <div className={styles.floatingSquare}></div>
@@ -45,7 +44,6 @@ const Projects: React.FC = () => {
         {clients.map((client) => (
           <div key={client.url} className={styles.card}>
             <div className={styles.iframeWrapper}>
-              {/* Some sites may restrict embedding; the link below provides a fallback. */}
               <iframe
                 src={client.url}
                 title={client.name}
