@@ -1,6 +1,6 @@
 import TranslateIcon from '@mui/icons-material/Translate';
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import styles from './NavBar.module.scss';
 import { useLanguage } from '../context/LangContext';
 import { ContactModal } from './Contactmodal/ContactModal';
@@ -8,6 +8,16 @@ import { ContactModal } from './Contactmodal/ContactModal';
 export const NavBar: React.FC = () => {
   const { lang, setLang } = useLanguage();
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleClientsNav = () => {
+    if (location.pathname === '/' || location.pathname === '/home') {
+      navigate('/projects');
+    } else {
+      navigate('/');
+    }
+  };
 
   const handleLangToggle = () => {
     setLang(!lang);
@@ -43,6 +53,12 @@ export const NavBar: React.FC = () => {
             className={styles.navOption}
             onClick={handleModalOpen}>
             {!lang ? 'Contact' : 'Contacto'}
+          </button>
+
+          <button
+            className={styles.navOption}
+            onClick={handleClientsNav}>
+            {lang ? 'Clientes' : 'Clients'}
           </button>
 
           <button
